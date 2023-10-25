@@ -22,6 +22,7 @@ const Navbar = () => {
         </div>
         <div className={styles.contact_info}>
           <h5>Call Us</h5>
+          <h6 className={styles.contact_number}>+254 728 547650</h6>
         </div>
       </nav>
     </header>

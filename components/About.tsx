@@ -31,7 +31,7 @@ const About = () => {
             " "
           )}
         >
-          Welcome to Andego Gachagua & Associate Advocates
+          Welcome to Andego Gachagua & Associates Advocates
         </h2>
         <p className="md:mt-12 mt-8 text-gray-500">
           We firmly believe in doing our work well, guided by a keen sense of

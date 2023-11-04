@@ -66,9 +66,8 @@ const Appointment = () => {
                 Drop in our office
               </h1>
               <p className="text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                tincidunt arcu diam, eu feugiat felis fermentum id. Curabitur
-                vitae nibh viverra, auctor turpis sed, scelerisque ex.
+                We firmly believe in doing our work well, guided by a keen sense
+                of professional integrity, trust and commercial awareness.
               </p>
 
               <div className="flex my-4 w-2/3 lg:w-1/2">
@@ -78,7 +77,7 @@ const Appointment = () => {
                 <div className="flex flex-col">
                   <h2 className="text-2xl text-red-500">Main Office</h2>
                   <p className="text-gray-400">
-                    5555 Tailwind RD, Pleasant Grove, UT 73533
+                    Madonna House, 3rd Floor, Suite 315 Westlands Rd, Westlands
                   </p>
                 </div>
               </div>
@@ -89,8 +88,7 @@ const Appointment = () => {
                 </div>
                 <div className="flex flex-col">
                   <h2 className="text-2xl text-red-500">Call Us</h2>
-                  <p className="text-gray-400">Tel: xxx-xxx-xxx</p>
-                  <p className="text-gray-400">Fax: xxx-xxx-xxx</p>
+                  <p className="text-gray-400">Tel: +254728 547 650</p>
                 </div>
               </div>
             </div>

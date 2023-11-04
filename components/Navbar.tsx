@@ -26,22 +26,31 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 hover:no-underline"
+              className={[
+                "menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 hover:no-underline",
+                styles.navbg,
+              ].join(" ")}
             >
               <li>
-                <Link href="/" className="hover:no-underline text-red-500">
+                <Link
+                  href="/"
+                  className="hover:no-underline text-white font-bold hover:text-red-500"
+                >
                   Homepage
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:no-underline text-red-500">
+                <Link
+                  href="/about"
+                  className="hover:no-underline text-white font-bold hover:text-red-500"
+                >
                   About
                 </Link>
               </li>
               <li>
                 <Link
                   href="/practice_areas"
-                  className="hover:no-underline text-red-500"
+                  className="hover:no-underline text-white font-bold hover:text-red-500"
                 >
                   Practice Areas
                 </Link>
@@ -49,7 +58,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/contact"
-                  className="hover:no-underline text-red-500"
+                  className="hover:no-underline text-white font-bold hover:text-red-500"
                 >
                   Contact Us
                 </Link>

@@ -33,19 +33,19 @@ const Hero = () => {
             </span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-200">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
+            AG Legal provides comprehensive legal solutions, prioritizing client
+            understanding, protection, and collaboration for exceptional results
+            with integrity and professionalism.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
-              href="#"
-              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-red-500 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              href="/contact"
+              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-red-500 hover:text-white shadow-sm hover:bg-red-500 hover:no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
             >
               Contact Us
             </a>
             <a
-              href="#"
+              href="/about"
               className="text-sm font-semibold leading-6 text-white hover:no-underline hover:text-red-500"
             >
               Learn more <span aria-hidden="true">→</span>

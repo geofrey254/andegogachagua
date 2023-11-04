@@ -4,60 +4,64 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div
-      className={[
-        "relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0",
-      ].join(" ")}
-    >
-      <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
-        <svg
-          className="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block"
-          viewBox="0 0 100 100"
-          fill="currentColor"
-          preserveAspectRatio="none slice"
-        >
-          <path d="M50 0H100L50 100H0L50 0Z" />
-        </svg>
-        <img
-          className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-          src="hero.jpg"
-          alt=""
+    <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div
+        className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true"
+      >
+        <div
+          className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#f52121] to-[#5cc1ec] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style={{
+            clipPath:
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+          }}
         />
       </div>
-      <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
-        <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
-          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-            Brand new
-          </p>
-          <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-            Everything you
-            <br className="hidden md:block" />
-            can imagine{" "}
-            <span className="inline-block text-deep-purple-accent-400">
-              is real
+      <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            We do not offer excuses or justifications. We simply deliver.
+          </div>
+        </div>
+        <div className="text-center">
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            Andego Gachagua &{" "}
+            <span className="sm:text-6xl text-red-500">
+              Associates Advocates
             </span>
-          </h2>
-          <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae. explicabo.
+          </h1>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+            fugiat aliqua.
           </p>
-          <div className="flex items-center">
+          <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
-              href="/"
-              className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+              href="#"
+              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Get started
+              Contact Us
             </a>
             <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700"
+              href="#"
+              className="text-sm font-semibold leading-6 text-gray-900"
             >
-              Learn more
+              Learn more <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>
+      </div>
+      <div
+        className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        aria-hidden="true"
+      >
+        <div
+          className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+          style={{
+            clipPath:
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+          }}
+        />
       </div>
     </div>
   );

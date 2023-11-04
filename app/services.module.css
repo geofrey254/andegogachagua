@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Poppins:wght@200;300;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.practice_areas {
+    background: #0F2027;
+    height: auto;
+    width: auto;
+}
+
+.features {
+    background: #0F2027;
+    height: auto;
+    width: auto;
+}
+
+.cards_services {
+    background: #4b8097;
+    height: auto;
+    width: auto;
+    box-shadow: rgb(30, 59, 90) 0px 20px 30px -10px;
+}
+
+.services_title {
+    color: white;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.services_what {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.services_what::before {
+    content: '__';
+    font-weight: bold;
+    margin-right: 1em;
+
+}
+
+.services_what::after {
+    content: '__';
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+.practice_h2 {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    line-height: 1.5em;
+
+}
+
+.about_button {
+    font-family: 'Nunito';
+    align-items: center;
+    background-image: linear-gradient(144deg, #53a1c3, #2C5364 50%, #00DDEB);
+    border: 0;
+    border-radius: 18px;
+    box-shadow: rgba(4, 213, 255, 0.461) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    line-height: 1em;
+    max-width: 20%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.about_button:active,
+.about_button:hover {
+    outline: 0;
+}
+
+@media (max-width: 640px) {
+    .about_button {
+        font-size: 14px;
+        min-width: 180px;
+    }
+}
+
+.about_title {
+    font-family: 'Girassol';
+}

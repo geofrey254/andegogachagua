@@ -4,28 +4,77 @@ import styles from "app/nav.module.css";
 
 const Navbar = () => {
   return (
-    <header className="w-full absolute inset-x-0 top-0 z-50 bg-custom">
-      <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4">
-        <Link href="/" className="flex justify-center items-center">
-          <Image
-            src="/logo.png"
-            width={50}
-            height={50}
-            alt="Andego Gachagua"
-          ></Image>
-        </Link>
-        <div className={styles.andego}>
-          <Link href="/">Home</Link>
-          <Link href="/">About Us</Link>
-          <Link href="/">Practice Areas</Link>
-          <Link href="/">Contact Us</Link>
+    <div>
+      <div className="navbar bg-base-100">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <label tabIndex={0} className="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </label>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 hover:no-underline"
+            >
+              <li>
+                <Link href="/" className="hover:no-underline text-red-500">
+                  Homepage
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="hover:no-underline text-red-500">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/practice_areas"
+                  className="hover:no-underline text-red-500"
+                >
+                  Practice Areas
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="hover:no-underline text-red-500"
+                >
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className={styles.contact_info}>
-          <h5>Call Us</h5>
-          <h6 className={styles.contact_number}>+254 728 547650</h6>
+        <div className="navbar-center">
+          <Link
+            href="/"
+            className="btn btn-ghost normal-case text-xl hover:no-underline hover:text-red-500"
+          >
+            <Image
+              src="/logo.png"
+              width={50}
+              height={50}
+              alt="Andego Gachagua"
+              className="logo"
+            ></Image>
+            Andego Gachagua
+          </Link>
         </div>
-      </nav>
-    </header>
+        <div className="navbar-end"></div>
+      </div>
+    </div>
   );
 };
 

@@ -21,7 +21,7 @@ const Features = () => {
               <BiSolidBank size={52} />
             </span>
 
-            <h1 className="text-2xl font-bold text-gray-700 capitalize dark:text-white">
+            <h1 className="text-2xl font-bold capitalize text-white">
               CONVEYANCING, FINANCE & BANKING
             </h1>
 
@@ -39,7 +39,7 @@ const Features = () => {
               <SiHandshake size={52} />
             </span>
 
-            <h1 className="text-2xl font-bold text-gray-700 capitalize dark:text-white">
+            <h1 className="text-2xl font-bold capitalize text-white">
               DISPUTE RESOLUTION
             </h1>
 
@@ -58,7 +58,7 @@ const Features = () => {
               <BiSolidBriefcaseAlt2 size={52} />
             </span>
 
-            <h1 className="text-2xl font-bold text-gray-700 capitalize dark:text-white">
+            <h1 className="text-2xl font-bold capitalize text-white">
               TAX, COMMERCIAL & CORPORATE SERVICES
             </h1>
 
@@ -78,7 +78,7 @@ const Features = () => {
               <MdFamilyRestroom size={52} />
             </span>
 
-            <h1 className="text-2xl font-bold text-gray-700 capitalize dark:text-white">
+            <h1 className="text-2xl font-bold capitalize text-white">
               FAMILY LAW, TRUSTS & ESTATE
             </h1>
 
@@ -99,7 +99,7 @@ const Features = () => {
               <BiWorld size={52} />
             </span>
 
-            <h1 className="text-2xl font-bold text-gray-700 capitalize dark:text-white">
+            <h1 className="text-2xl font-bold capitalize text-white">
               EMERGING AREAS
             </h1>
 

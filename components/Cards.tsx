@@ -7,7 +7,7 @@ import { FaAward } from "react-icons/fa";
 
 const Cards = () => {
   return (
-    <div className="md:flex items-center justify-center px-6 text-center p-12 md:p-0">
+    <div className="md:flex items-center justify-center text-center p-12 ">
       <div className={["p-12", styles.cards_hero].join(" ")}>
         <div className="card-icon flex justify-center p-8">
           <SiHandshake size={52} color="white" />

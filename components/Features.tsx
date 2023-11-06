@@ -11,13 +11,13 @@ const Features = () => {
   return (
     <div className={["", styles.features].join(" ")}>
       <div className="container px-6 py-10 mx-auto">
-        <p className="mt-4 text-gray-500 xl:mt-6 dark:text-gray-300">
+        <p className="mt-4  xl:mt-6 text-gray-300">
           The Firm provides a full array of legal services to the foregoing
           sectors under the following departments
         </p>
         <div className="grid p-4 grid-cols-1 gap-8 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
           <div className="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl">
-            <span className="inline-block dark:text-red-500">
+            <span className="inline-block text-red-500">
               <BiSolidBank size={52} />
             </span>
 
@@ -35,7 +35,7 @@ const Features = () => {
           </div>
 
           <div className="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl">
-            <span className="inline-block text-red-500 dark:text-red-400">
+            <span className="inline-block text-red-500 ">
               <SiHandshake size={52} />
             </span>
 
@@ -74,7 +74,7 @@ const Features = () => {
           </div>
 
           <div className="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl">
-            <span className="inline-block text-red-500 dark:text-red-400">
+            <span className="inline-block text-red-500 ">
               <MdFamilyRestroom size={52} />
             </span>
 
@@ -95,7 +95,7 @@ const Features = () => {
           </div>
 
           <div className="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl">
-            <span className="inline-block text-red-500 dark:text-red-400">
+            <span className="inline-block text-red-500 ">
               <BiWorld size={52} />
             </span>
 

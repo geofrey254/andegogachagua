@@ -62,7 +62,7 @@ const Features = () => {
               TAX, COMMERCIAL & CORPORATE SERVICES
             </h1>
 
-            <p className="text-gray-500 dark:text-gray-300">
+            <p className="text-gray-300">
               Our experienced team offers comprehensive tax, commercial, and
               corporate services for seamless business operations. We optimize
               structures in compliance with laws, provide counsel for complex

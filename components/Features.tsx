@@ -25,7 +25,7 @@ const Features = () => {
               CONVEYANCING, FINANCE & BANKING
             </h1>
 
-            <p className="text-gray-500 dark:text-gray-300">
+            <p className="text-gray-300">
               Our team excels in property acquisition, development, tax
               planning, leasing, conveyancing (property transfer, leases, etc.),
               and banking services (securities assessment, documentation, and
@@ -43,7 +43,7 @@ const Features = () => {
               DISPUTE RESOLUTION
             </h1>
 
-            <p className="text-gray-500 dark:text-gray-300">
+            <p className="text-gray-300">
               AG Legal specializes in personalized legal solutions, including
               civil and commercial litigation, debt recovery, land and
               environment disputes, personal injury, employment disputes, and
@@ -82,7 +82,7 @@ const Features = () => {
               FAMILY LAW, TRUSTS & ESTATE
             </h1>
 
-            <p className="text-gray-500 dark:text-gray-300">
+            <p className="text-gray-300">
               AG Legal's team of professionals is dedicated to safeguarding your
               interests and those of your loved ones with confidentiality and
               expertise. We specialize in family law in Kenya, covering child
@@ -103,7 +103,7 @@ const Features = () => {
               EMERGING AREAS
             </h1>
 
-            <p className="text-gray-500 dark:text-gray-300">
+            <p className="text-gray-300">
               At AG Legal, we understand that the operating environment is
               constantly changing. We stay and remain ahead so that we can
               anticipate legal hurdles and guide you through these seamlessly.

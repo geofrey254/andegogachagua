@@ -11,6 +11,6 @@
 }
 
 .book_title {
-    font-family: 'Manrope';
+    font-family: 'Manrope', sans-serif;
     font-weight: 800;
 }

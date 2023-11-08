@@ -6,19 +6,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 .practice_areas {
-    background: #0F2027;
+    background: #744d2b;
     height: auto;
     width: auto;
 }
 
 .features {
-    background: #0F2027;
+    background: #744d2b;
     height: auto;
     width: auto;
 }
 
 .cards_services {
-    background: #4b8097;
+    background: #c5c490;
     height: auto;
     width: auto;
     box-shadow: rgb(30, 59, 90) 0px 20px 30px -10px;
@@ -59,7 +59,7 @@
 .about_button {
     font-family: 'Nunito', sans-serif;
     align-items: center;
-    background-image: linear-gradient(144deg, #53a1c3, #2C5364 50%, #00DDEB);
+    background-image: linear-gradient(144deg, #c5c490, #c5c490 50%, #c5c490);
     border: 0;
     border-radius: 18px;
     box-shadow: rgba(4, 213, 255, 0.461) 0 15px 30px -5px;
@@ -80,6 +80,8 @@
 .about_button:active,
 .about_button:hover {
     outline: 0;
+    text-decoration: none;
+    color: white;
 }
 
 @media (max-width: 640px) {

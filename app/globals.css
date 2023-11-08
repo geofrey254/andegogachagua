@@ -39,6 +39,18 @@
     @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
 }
 
+.color-text {
+    color: #744d2b;
+}
+
+.color-andego {
+    color: #020101
+}
+
+.color-light {
+    color: #c5c490;
+}
+
 /* END: General styles */
 
 /* START: Hero styles */
@@ -229,13 +241,11 @@
 }
 
 /* END: search manufacturer styles */
-
 /* Navbar */
 .bg-custom {
-    background: #0F2027;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #f0f1f0;
+}
+
+.bg-cont {
+    background: #744d2b;
 }

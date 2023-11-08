@@ -14,7 +14,7 @@ const Choose = () => {
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
             Why Choose Us
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400">
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-200">
             We firmly believe in doing our work well, guided by a keen sense of
             professional integrity, trust and commercial awareness. This means
             that we apply our best efforts to provide excellent advice, to
@@ -29,48 +29,48 @@ const Choose = () => {
             <div className="border-2 border-gray-200 px-4 py-6 rounded-lg justify-center text-center">
               <BiSolidBriefcaseAlt2
                 size={72}
-                className="text-red-500  w-12 h-12 mb-3 inline-block"
+                className="color-light  w-12 h-12 mb-3 inline-block"
               />
               <h2 className="title-font font-medium text-3xl text-white">
                 400+
               </h2>
-              <p className="leading-relaxed">Cases Closed</p>
+              <p className="leading-relaxed text-white">Cases Closed</p>
             </div>
           </div>
           <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
             <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
               <GoLaw
                 size={72}
-                className="text-red-500  w-12 h-12 mb-3 inline-block"
+                className="color-light  w-12 h-12 mb-3 inline-block"
               />
               <h2 className="title-font font-medium text-3xl text-white">
                 10+
               </h2>
-              <p className="leading-relaxed">Expert Attorneys</p>
+              <p className="leading-relaxed text-white">Expert Attorneys</p>
             </div>
           </div>
           <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
             <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
               <FaHandshake
                 size={72}
-                className="text-red-500  w-12 h-12 mb-3 inline-block"
+                className="color-light  w-12 h-12 mb-3 inline-block"
               />
               <h2 className="title-font font-medium text-3xl text-white">
                 500+
               </h2>
-              <p className="leading-relaxed">Trusted Clients</p>
+              <p className="leading-relaxed text-white">Trusted Clients</p>
             </div>
           </div>
           <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
             <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
               <FaAward
                 size={72}
-                className="text-red-500  w-12 h-12 mb-3 inline-block"
+                className="color-light w-12 h-12 mb-3 inline-block"
               />
               <h2 className="title-font font-medium text-3xl text-white">
                 255+
               </h2>
-              <p className="leading-relaxed">Successful Cases</p>
+              <p className="leading-relaxed text-white">Successful Cases</p>
             </div>
           </div>
         </div>

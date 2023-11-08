@@ -31,7 +31,7 @@ const page = () => {
               <li className="inline-flex items-center">
                 <Link
                   href="/"
-                  className="inline-flex items-center text-sm font-medium hover:no-underline text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-red-500"
+                  className="inline-flex items-center text-sm font-medium hover:no-underline text-gray-700  dark:text-gray-400 dark:hover:color-andego"
                 >
                   <svg
                     className="w-3 h-3 mr-2.5"
@@ -63,7 +63,7 @@ const page = () => {
                       d="m1 9 4-4-4-4"
                     />
                   </svg>
-                  <span className="ml-1 text-sm font-medium text-red-500 md:ml-2">
+                  <span className="ml-1 text-sm font-medium text-white md:ml-2">
                     About
                   </span>
                 </div>

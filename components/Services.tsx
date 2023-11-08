@@ -5,17 +5,18 @@ import { IoNavigate } from "react-icons/io5";
 import { FaAward, FaArrowRight } from "react-icons/fa";
 import { MdFamilyRestroom } from "react-icons/md";
 import Link from "next/link";
+import { Features } from "@/components";
 
 const Services = () => {
   return (
     <div
       className={[
-        "items-center justify-center text-center p-2 md:p-12 grid grid-cols-12",
+        "items-center justify-center text-center p-8",
         styles.practice_areas,
       ].join(" ")}
     >
       <h3
-        className={["text-red-500 col-span-12 mt-8", styles.services_what].join(
+        className={["color-andego col-span-12 mt-8", styles.services_what].join(
           " "
         )}
       >
@@ -29,98 +30,42 @@ const Services = () => {
       >
         Our Practice Areas
       </h2>
-      <div
-        className={[
-          "p-12 m-10 md:col-span-4 col-span-12 rounded-3xl",
-          styles.cards_services,
-        ].join(" ")}
-      >
-        <div className="card-icon flex justify-center p-8">
-          <BiSolidBank size={72} color="white" />
-        </div>
-        <h2
-          className={["font-bold md:text-2xl mb-2", styles.practice_h2].join(
-            " "
-          )}
-        >
-          Conveyancing, Finance & Banking
-        </h2>
-      </div>
+      <div className="grid p-4 grid-cols-1 gap-8 xl:gap-12 md:grid-cols-2 xl:grid-cols-2">
+        <div className="p-8 space-y-3 border-2 rounded-xl bg-custom">
+          <span className="inline-block color-andego">
+            <BiSolidBank size={52} />
+          </span>
 
-      {/* Dispute Resolution */}
-      <div
-        className={[
-          "p-12 m-10 md:col-span-4 col-span-12 rounded-3xl",
-          styles.cards_services,
-        ].join(" ")}
-      >
-        <div className="card-icon flex justify-center p-8">
-          <SiHandshake size={72} color="white" />
-        </div>
-        <h2
-          className={["font-bold md:text-2xl mb-2", styles.practice_h2].join(
-            " "
-          )}
-        >
-          Dispute Resolution
-        </h2>
-      </div>
+          <h1 className="text-2xl font-bold capitalize color-text">
+            CONVEYANCING, FINANCE & BANKING
+          </h1>
 
-      {/* Tax, Commercial & Corporate Services */}
-      <div
-        className={[
-          "p-12 m-10 md:col-span-4 col-span-12 rounded-3xl",
-          styles.cards_services,
-        ].join(" ")}
-      >
-        <div className="card-icon flex justify-center p-8">
-          <BiSolidBriefcaseAlt2 size={72} color="white" />
+          <p className="color-andego">
+            Our team excels in property acquisition, development, tax planning,
+            leasing, conveyancing (property transfer, leases, etc.), and banking
+            services (securities assessment, documentation, and debt recovery).
+            We ensure smooth financial transactions with expert guidance and
+            business-oriented legal advice.
+          </p>
         </div>
-        <h2
-          className={["font-bold md:text-2xl mb-2", styles.practice_h2].join(
-            " "
-          )}
-        >
-          Tax, Commercial & Corporate Services
-        </h2>
-      </div>
+        <div className="p-8 space-y-3 border-2 rounded-xl bg-custom">
+          <span className="inline-block color-andego ">
+            <SiHandshake size={52} />
+          </span>
 
-      {/* Family Law, Trusts & Estate */}
-      <div
-        className={[
-          "p-12 m-10 md:col-span-4 col-span-12 rounded-3xl",
-          styles.cards_services,
-        ].join(" ")}
-      >
-        <div className="card-icon flex justify-center p-8">
-          <MdFamilyRestroom size={72} color="white" />
-        </div>
-        <h2
-          className={["font-bold md:text-2xl mb-2", styles.practice_h2].join(
-            " "
-          )}
-        >
-          Family Law, Trusts & Estate
-        </h2>
-      </div>
+          <h1 className="text-2xl font-bold capitalize color-text">
+            DISPUTE RESOLUTION
+          </h1>
 
-      {/* Emerging Areas */}
-      <div
-        className={[
-          "p-12 m-10 md:col-span-4 col-span-12 rounded-3xl",
-          styles.cards_services,
-        ].join(" ")}
-      >
-        <div className="card-icon flex justify-center p-8">
-          <BiWorld size={72} color="white" />
+          <p className="color-andego">
+            AG Legal specializes in personalized legal solutions, including
+            civil and commercial litigation, debt recovery, land and environment
+            disputes, personal injury, employment disputes, and family law. We
+            guide clients through dispute resolution methods such as litigation,
+            negotiation, conciliation, mediation, and arbitration, addressing a
+            wide spectrum of legal issues.
+          </p>
         </div>
-        <h2
-          className={["font-bold md:text-2xl mb-2", styles.practice_h2].join(
-            " "
-          )}
-        >
-          Emerging Areas
-        </h2>
       </div>
 
       <div className="about_page_button col-span-12 justify-center text-center mb-8 md:mb-0">

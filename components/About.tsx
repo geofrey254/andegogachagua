@@ -7,8 +7,8 @@ import { BiSolidBank, BiSolidBriefcaseAlt2, BiWorld } from "react-icons/bi";
 
 const About = () => {
   return (
-    <div className="flex-1 p-20 padding-x lg:grid lg:grid-cols-12 ">
-      <div className="image md:col-span-5 col-span-12">
+    <div className="flex-1 p-20 md:grid md:grid-cols-12 ">
+      <div className="image md:col-span-5 lg:col-span-5 col-span-12">
         <Image
           className="rounded-lg border-2 border-amber-500 shadow-lg shadow-amber-500/100"
           src="/attorney1.jpg"
@@ -17,10 +17,10 @@ const About = () => {
           alt="Picture of the CEO"
         />
       </div>
-      <div className="about-home md:col-span-7 col-span-full">
+      <div className="about-home md:col-span-7 lg:col-span-7 col-span-full md:ml-8">
         <h4
           className={[
-            "text-red-500 text-2xl md:text-lg md:mt-0 mt-10",
+            "color-andego text-2xl md:text-lg md:mt-0 mt-10",
             styles.about_h_home,
           ].join(" ")}
         >
@@ -46,7 +46,7 @@ const About = () => {
 
         <h4
           className={[
-            "md:mt-20 mt-10 text-red-500",
+            "md:mt-20 mt-10 color-andego",
             styles.about_signature,
           ].join(" ")}
         >

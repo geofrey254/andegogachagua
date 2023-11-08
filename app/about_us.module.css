@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 .about {
-    background: url('/hero.jpg'), linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: url('/hero.jpg'), linear-gradient(to right, #c5c490, #020101, #744d2b);
     background-position: center;
     background-blend-mode: multiply;
     background-size: cover;

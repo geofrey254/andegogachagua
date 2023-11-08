@@ -34,7 +34,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/"
-                  className="hover:no-underline text-white font-bold hover:text-red-500"
+                  className="hover:no-underline text-white font-bold hover:color-andego"
                 >
                   Homepage
                 </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/about"
-                  className="hover:no-underline text-white font-bold hover:text-red-500"
+                  className="hover:no-underline text-white font-bold hover:color-andego"
                 >
                   About
                 </Link>
@@ -50,7 +50,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/practice_areas"
-                  className="hover:no-underline text-white font-bold hover:text-red-500"
+                  className="hover:no-underline text-white font-bold hover:color-andego"
                 >
                   Practice Areas
                 </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/contact"
-                  className="hover:no-underline text-white font-bold hover:text-red-500"
+                  className="hover:no-underline text-white font-bold hover:color-andego"
                 >
                   Contact Us
                 </Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
         <div className="navbar-center">
           <Link
             href="/"
-            className="btn btn-ghost normal-case text-xl hover:no-underline hover:text-red-500"
+            className="btn btn-ghost normal-case text-xl hover:no-underline hover:color-andego"
           >
             <Image
               src="/logo.png"

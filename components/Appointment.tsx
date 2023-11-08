@@ -4,7 +4,7 @@ import styles from "app/appointment.module.css";
 const Appointment = () => {
   return (
     <div>
-      <div className="flex justify-center items-center w-screen h-full bg-white">
+      <div className="flex justify-center items-center w-screen h-full bg-white p-4">
         <div className="container mx-auto my-20 px-4 lg:px-0">
           <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
             <div className="flex">
@@ -65,7 +65,7 @@ const Appointment = () => {
               <h1 className="font-bold uppercase text-4xl my-4 text-white">
                 Drop in our office
               </h1>
-              <p className="text-gray-400">
+              <p className="text-gray-300">
                 We firmly believe in doing our work well, guided by a keen sense
                 of professional integrity, trust and commercial awareness.
               </p>
@@ -75,20 +75,20 @@ const Appointment = () => {
                   <i className="fas fa-map-marker-alt pt-2 pr-2" />
                 </div>
                 <div className="flex flex-col">
-                  <h2 className="text-2xl text-red-500">Main Office</h2>
-                  <p className="text-gray-400">
+                  <h2 className="text-2xl color-andego">Main Office</h2>
+                  <p className=" text-gray-300">
                     Madonna House, 3rd Floor, Suite 315 Westlands Rd, Westlands
                   </p>
                 </div>
               </div>
 
-              <div className="flex my-4 w-2/3 lg:w-1/2">
+              <div className="flex my-4 ">
                 <div className="flex flex-col">
                   <i className="fas fa-phone-alt pt-2 pr-2" />
                 </div>
                 <div className="flex flex-col">
-                  <h2 className="text-2xl text-red-500">Call Us</h2>
-                  <p className="text-gray-400">Tel: +254728 547 650</p>
+                  <h2 className="text-2xl color-andego">Call Us</h2>
+                  <p className="text-gray-300">Tel: +254728 547 650</p>
                 </div>
               </div>
             </div>

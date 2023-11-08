@@ -26,7 +26,7 @@ const Footer = () => {
               className="logo"
             ></Image>
             <span className="ml-2 md:text-xl text-sm font-bold tracking-wide uppercase color-text">
-              Andego Gachagua & Advocate Associates
+              Andego Gachagua Advocates LLP
             </span>
           </a>
           <div className="mt-6 lg:max-w-sm">
@@ -119,7 +119,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
         <p className="text-sm ">
-          © Copyright 2023 Andego Gachagua & Associates Advocates
+          © Copyright 2023 Andego Gachagua Advocates LLP
         </p>
         <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <li>

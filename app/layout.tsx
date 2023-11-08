@@ -11,8 +11,8 @@ import { Navbar } from "@/components";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Andego Gachagua &  Associates Advocates",
-  description: "Andego Gachagua &  Associates Advocates",
+  title: "Andego Gachagua Advocates LLP",
+  description: "Andego Gachagua Advocates LLP",
 };
 
 export default function RootLayout({

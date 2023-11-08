@@ -27,8 +27,7 @@ const Hero = () => {
         </div>
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Andego Gachagua &{" "}
-            <span className="sm:text-6xl tex-white">Associates Advocates</span>
+            Andego Gachagua Advocates LLP
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-200">
             AG Legal provides comprehensive legal solutions, prioritizing client

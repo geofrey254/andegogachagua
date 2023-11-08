@@ -32,7 +32,7 @@ const About = () => {
             styles.about_welcome,
           ].join(" ")}
         >
-          Welcome to Andego Gachagua & Associates Advocates
+          Welcome to Andego Gachagua Advocates LLP
         </h2>
         <p className="md:mt-12 mt-8 text-gray-500">
           We firmly believe in doing our work well, guided by a keen sense of

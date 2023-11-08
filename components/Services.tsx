@@ -36,7 +36,7 @@ const Services = () => {
             <BiSolidBank size={52} />
           </span>
 
-          <h1 className="text-2xl font-bold capitalize color-text">
+          <h1 className="text-sm md:text-2xl font-bold capitalize color-text">
             CONVEYANCING, FINANCE & BANKING
           </h1>
 
@@ -53,7 +53,7 @@ const Services = () => {
             <SiHandshake size={52} />
           </span>
 
-          <h1 className="text-2xl font-bold capitalize color-text">
+          <h1 className="text-sm md:text-2xl font-bold capitalize color-text">
             DISPUTE RESOLUTION
           </h1>
 

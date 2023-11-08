@@ -27,9 +27,10 @@ const About = () => {
           About Us
         </h4>
         <h2
-          className={["md:mt-5 mt-2 text-gray-800", styles.about_welcome].join(
-            " "
-          )}
+          className={[
+            "md:mt-5 mt-2 text-2xl md:text-4xl text-gray-800",
+            styles.about_welcome,
+          ].join(" ")}
         >
           Welcome to Andego Gachagua & Associates Advocates
         </h2>

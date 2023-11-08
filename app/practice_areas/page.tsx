@@ -32,7 +32,7 @@ const page = () => {
               <li className="inline-flex items-center">
                 <Link
                   href="/"
-                  className="inline-flex items-center text-sm font-medium hover:no-underline text-gray-700  dark:text-gray-400 dark:hover:color-andego"
+                  className="inline-flex items-center text-sm font-medium hover:no-underline kstext-gray-400 dark:hover:color-andego"
                 >
                   <svg
                     className="w-3 h-3 mr-2.5"

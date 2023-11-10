@@ -88,7 +88,7 @@ const Appointment = () => {
                 </div>
                 <div className="flex flex-col">
                   <h2 className="text-2xl color-andego">Call Us</h2>
-                  <p className="text-white">Tel: +254728 547 650</p>
+                  <p className="text-white">Tel: +254 759 803001</p>
                 </div>
               </div>
             </div>

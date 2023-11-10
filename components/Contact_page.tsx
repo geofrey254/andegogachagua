@@ -61,7 +61,7 @@ const Contact_page = () => {
 
                   <span className=" text-white w-72">
                     <ul className="list-none">
-                      <li>+254728 547 650</li>
+                      <li>+254 759 803001</li>
                       <li>+254704 208484</li>
                     </ul>
                   </span>

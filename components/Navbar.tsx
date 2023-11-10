@@ -84,14 +84,15 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <Link
-            href="/"
+            aria-label="Chat on WhatsApp"
+            href="https://wa.me/0759803001"
             className="btn btn-ghost normal-case text-xl hover:no-underline hover:color-andego"
           >
             <Image
               src="/whats.png"
               width={100}
               height={100}
-              alt="Andego Gachagua"
+              alt="Chat on WhatsApp"
               className="logo"
             ></Image>
           </Link>

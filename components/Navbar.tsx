@@ -85,7 +85,7 @@ const Navbar = () => {
         <div className="navbar-end">
           <Link
             aria-label="Chat on WhatsApp"
-            href="https://wa.me/0759803001"
+            href="https://wa.me/+254759803001"
             className="btn btn-ghost normal-case text-xl hover:no-underline hover:color-andego"
           >
             <Image

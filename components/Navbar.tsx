@@ -79,7 +79,7 @@ const Navbar = () => {
               alt="Andego Gachagua"
               className="logo"
             ></Image>
-            <span className="">Andego Gachagua</span>
+            <span className="l hidden">Andego Gachagua</span>
           </Link>
         </div>
         <div className="navbar-end">

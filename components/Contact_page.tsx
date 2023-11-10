@@ -90,7 +90,7 @@ const Contact_page = () => {
               </div>
 
               <div className="mt-6 md:mt-8">
-                <h3 className="text-gray-300 ">Follow us</h3>
+                <h3 className="text-white ">Follow us</h3>
 
                 <div className="flex mt-4 -mx-1.5 ">
                   <a

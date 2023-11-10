@@ -21,7 +21,7 @@ const Features = () => {
               CONVEYANCING, FINANCE & BANKING
             </h1>
 
-            <p className="text-gray-300">
+            <p className="text-white">
               Our team excels in property acquisition, development, tax
               planning, leasing, conveyancing (property transfer, leases, etc.),
               and banking services (securities assessment, documentation, and
@@ -39,7 +39,7 @@ const Features = () => {
               DISPUTE RESOLUTION
             </h1>
 
-            <p className="text-gray-300">
+            <p className="text-white">
               AG Legal specializes in personalized legal solutions, including
               civil and commercial litigation, debt recovery, land and
               environment disputes, personal injury, employment disputes, and
@@ -58,7 +58,7 @@ const Features = () => {
               TAX, COMMERCIAL & CORPORATE SERVICES
             </h1>
 
-            <p className="text-gray-300">
+            <p className="text-white">
               Our experienced team offers comprehensive tax, commercial, and
               corporate services for seamless business operations. We optimize
               structures in compliance with laws, provide counsel for complex
@@ -78,7 +78,7 @@ const Features = () => {
               FAMILY LAW, TRUSTS & ESTATE
             </h1>
 
-            <p className="text-gray-300">
+            <p className="text-white">
               AG Legal's team of professionals is dedicated to safeguarding your
               interests and those of your loved ones with confidentiality and
               expertise. We specialize in family law in Kenya, covering child
@@ -99,7 +99,7 @@ const Features = () => {
               EMERGING AREAS
             </h1>
 
-            <p className="text-gray-300">
+            <p className="text-white">
               At AG Legal, we understand that the operating environment is
               constantly changing. We stay and remain ahead so that we can
               anticipate legal hurdles and guide you through these seamlessly.

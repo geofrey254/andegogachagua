@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "app/nav.module.css";
+import { FaAward, FaArrowRight, FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -78,10 +79,23 @@ const Navbar = () => {
               alt="Andego Gachagua"
               className="logo"
             ></Image>
-            Andego Gachagua
+            <span className="l hidden">Andego Gachagua</span>
           </Link>
         </div>
-        <div className="navbar-end"></div>
+        <div className="navbar-end">
+          <Link
+            href="/"
+            className="btn btn-ghost normal-case text-xl hover:no-underline hover:color-andego"
+          >
+            <Image
+              src="/whats.png"
+              width={100}
+              height={100}
+              alt="Andego Gachagua"
+              className="logo"
+            ></Image>
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ const Call = () => {
         click away.
       </p>
       <Link href="/contact" className="hover:no-underline">
-        <button className="flex mx-auto select-none items-center gap-3 rounded-lg bg-red-500 py-3 px-6 text-center align-middle text-s font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:no-underline">
+        <button className="flex mx-auto select-none items-center gap-3 rounded-lg bg-orange-300 py-3 px-6 text-center align-middle text-s font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:no-underline">
           CONTACT US NOW
           <BiSolidPhoneCall size={22} />
         </button>

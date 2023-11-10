@@ -1,5 +1,6 @@
 import styles from "app/services.module.css";
 import { BiSolidBank, BiSolidBriefcaseAlt2, BiWorld } from "react-icons/bi";
+import { BiSolidPhoneCall } from "react-icons/bi";
 import { SiHandshake } from "react-icons/si";
 import { IoNavigate } from "react-icons/io5";
 import { FaAward, FaArrowRight } from "react-icons/fa";
@@ -69,15 +70,10 @@ const Services = () => {
       </div>
 
       <div className="about_page_button col-span-12 justify-center text-center mb-8 md:mb-0">
-        <Link
-          className={[
-            "flex mx-auto rounded-lg mt-5 font-bold shadow-lg items-center justify-center",
-            styles.about_button,
-          ].join(" ")}
-          href="/about"
-        >
-          View Practice Areas
-          <FaArrowRight size={22} color="white" className="ml-4" />
+        <Link href="/contact" className="hover:no-underline">
+          <button className="flex mx-auto select-none items-center gap-3 rounded-lg bg-orange-300 py-3 px-6 text-center align-middle text-s font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:no-underline">
+            View More
+          </button>
         </Link>
       </div>
     </div>

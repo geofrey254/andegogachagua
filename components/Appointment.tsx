@@ -47,7 +47,7 @@ const Appointment = () => {
             </div>
             <div className="my-2 w-1/2 lg:w-1/4">
               <button
-                className="uppercase text-sm font-bold tracking-wide bg-red-500 text-gray-100 p-3 rounded-lg w-full 
+                className="uppercase text-sm font-bold tracking-wide bg-orange-300 text-gray-100 p-3 rounded-lg w-full 
                           focus:outline-none focus:shadow-outline"
               >
                 Book
@@ -65,7 +65,7 @@ const Appointment = () => {
               <h1 className="font-bold uppercase text-4xl my-4 text-white">
                 Drop in our office
               </h1>
-              <p className="text-gray-300">
+              <p className="text-white">
                 We firmly believe in doing our work well, guided by a keen sense
                 of professional integrity, trust and commercial awareness.
               </p>
@@ -76,7 +76,7 @@ const Appointment = () => {
                 </div>
                 <div className="flex flex-col">
                   <h2 className="text-2xl color-andego">Main Office</h2>
-                  <p className=" text-gray-300">
+                  <p className=" text-white">
                     Madonna House, 3rd Floor, Suite 315 Westlands Rd, Westlands
                   </p>
                 </div>
@@ -88,7 +88,7 @@ const Appointment = () => {
                 </div>
                 <div className="flex flex-col">
                   <h2 className="text-2xl color-andego">Call Us</h2>
-                  <p className="text-gray-300">Tel: +254728 547 650</p>
+                  <p className="text-white">Tel: +254728 547 650</p>
                 </div>
               </div>
             </div>

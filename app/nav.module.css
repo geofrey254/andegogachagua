@@ -33,7 +33,7 @@
 .hero {
     width: 100%;
     height: 80vh;
-    background: url(/hero.jpg), linear-gradient(to right, #393929, #744d2b) center no-repeat;
+    background: url(/hero.jpg), linear-gradient(to right, #393929, #cb8547) center no-repeat;
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;

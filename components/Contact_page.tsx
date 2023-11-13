@@ -181,8 +181,12 @@ const Contact_page = () => {
                       Full Name
                     </label>
                     <input
+                      id="frm-name"
+                      name="names"
                       type="text"
                       placeholder="John Doe"
+                      autoComplete="given-name"
+                      required
                       className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md bg-custom  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                     />
                   </div>
@@ -192,8 +196,26 @@ const Contact_page = () => {
                       Email address
                     </label>
                     <input
+                      id="frm-email"
                       type="email"
+                      name="email"
                       placeholder="johndoe@example.com"
+                      autoComplete="email"
+                      required
+                      className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md bg-custom focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                    />
+                  </div>
+                  <div className="flex-1 mt-6">
+                    <label className="block mb-2 text-sm text-gray-200">
+                      Phone
+                    </label>
+                    <input
+                      id="frm-phone"
+                      type="text"
+                      name="phone"
+                      placeholder="+254 701 234567"
+                      autoComplete="tel"
+                      required
                       className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md bg-custom focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                     />
                   </div>
@@ -204,11 +226,16 @@ const Contact_page = () => {
                     </label>
                     <textarea
                       className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 bg-custom  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                      id="frm-message"
+                      name="message"
                       placeholder="Message"
                     ></textarea>
                   </div>
 
-                  <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide color-text capitalize transition-colors duration-300 transform bg-custom rounded-md focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
+                  <button
+                    className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide color-text capitalize transition-colors duration-300 transform bg-custom rounded-md focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50"
+                    type="submit"
+                  >
                     get in touch
                   </button>
                 </form>

@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 
 const Appointment = () => {
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -27,7 +28,7 @@ const Appointment = () => {
 
   const goto = () => {
     alert("Form submitted succesfully");
-    window.open("/", "_self");
+    window.open("/contact", "_self");
   };
 
   return (

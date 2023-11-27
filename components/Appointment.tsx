@@ -6,7 +6,7 @@ import emailjs from "@emailjs/browser";
 const Appointment = () => {
   const form = useRef();
 
-  const sendEmail = (e: { preventDefault: () => void }) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
@@ -25,12 +25,6 @@ const Appointment = () => {
         }
       );
   };
-
-  const goto = () => {
-    alert("Form submitted succesfully");
-    window.open("/contact", "_self");
-  };
-
   return (
     <div>
       <div className="flex justify-center items-center w-screen h-full bg-white p-4">
@@ -93,7 +87,6 @@ const Appointment = () => {
                           focus:outline-none focus:shadow-outline"
                   type="submit"
                   value="send"
-                  onClick={goto}
                 >
                   Book
                 </button>

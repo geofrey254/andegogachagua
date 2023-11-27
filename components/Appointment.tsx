@@ -6,7 +6,7 @@ import emailjs from "@emailjs/browser";
 const Appointment = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
     emailjs

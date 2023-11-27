@@ -1,7 +1,39 @@
+"use client";
 import React from "react";
 import styles from "app/contact.module.css";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import Link from "next/link";
 
 const Contact_page = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_7mib2j9",
+        "template_j8qx449",
+        form.current,
+        "ORZ8LcmBEEYQ_XG0c"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const goto = () => {
+    alert("Form submitted succesfully");
+    window.open("/", "_self");
+  };
+
   return (
     <div>
       <section className={["min-h-screen", styles.contact].join(" ")}>
@@ -40,6 +72,32 @@ const Contact_page = () => {
 
                   <span className="mx-2 text-white w-72">
                     Madonna House, 3rd Floor, Suite 315 Westlands Rd, Westlands
+                  </span>
+                </p>
+                <p className="flex items-start -mx-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6 mx-2 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+
+                  <span className="mx-2 text-white w-72">
+                    Adala Atuko/ Got Huma Road, Behind St.Joseph's Catholic
+                    Church, <br /> Milimani, Kisumu
                   </span>
                 </p>
 
@@ -175,17 +233,15 @@ const Contact_page = () => {
                   Contact form
                 </h1>
 
-                <form className="mt-4">
+                <form className="mt-4" ref={form} onSubmit={sendEmail}>
                   <div className="flex-1">
                     <label className="block mb-2 text-sm text-gray-200">
                       Full Name
                     </label>
                     <input
-                      id="frm-name"
-                      name="names"
+                      name="user_name"
                       type="text"
-                      placeholder="John Doe"
-                      autoComplete="given-name"
+                      placeholder="Enter your Name..."
                       required
                       className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md bg-custom  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                     />
@@ -196,11 +252,9 @@ const Contact_page = () => {
                       Email address
                     </label>
                     <input
-                      id="frm-email"
-                      type="email"
+                      type="text"
                       name="email"
                       placeholder="johndoe@example.com"
-                      autoComplete="email"
                       required
                       className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md bg-custom focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                     />
@@ -210,11 +264,9 @@ const Contact_page = () => {
                       Phone
                     </label>
                     <input
-                      id="frm-phone"
                       type="text"
                       name="phone"
                       placeholder="+254 701 234567"
-                      autoComplete="tel"
                       required
                       className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md bg-custom focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                     />
@@ -226,7 +278,6 @@ const Contact_page = () => {
                     </label>
                     <textarea
                       className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 bg-custom  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-                      id="frm-message"
                       name="message"
                       placeholder="Message"
                     ></textarea>
@@ -235,6 +286,8 @@ const Contact_page = () => {
                   <button
                     className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide color-text capitalize transition-colors duration-300 transform bg-custom rounded-md focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50"
                     type="submit"
+                    value="send"
+                    onClick={goto}
                   >
                     get in touch
                   </button>

@@ -55,6 +55,17 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex">
+            <p className="mr-1 color-text">Phone:</p>
+            <a
+              href="tel:+254 759 803001"
+              aria-label="Our phone"
+              title="Our phone"
+              className="transition-colors duration-300 color-andego hover:no-underline"
+            >
+              +254 704 208484
+            </a>
+          </div>
+          <div className="flex">
             <p className="mr-1 color-text">Email:</p>
             <a
               href="mailto:info@andegogachagua.com"
@@ -68,7 +79,7 @@ const Footer = () => {
           <div className="flex">
             <p className="mr-1 color-text">Address:</p>
             <a
-              href="https://www.google.com/maps"
+              href="https://www.google.com/maps/place/Madonna+House/@-1.265306,36.8046322,20z/data=!4m6!3m5!1s0x182f173fc261c85d:0xc5db81b7b61f20ae!8m2!3d-1.265306!4d36.8049541!16s%2Fg%2F1yg4v8_03?entry=ttu"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Our address"
@@ -76,6 +87,20 @@ const Footer = () => {
               className="transition-colors duration-300 color-andego hover:no-underline"
             >
               Madonna House, 3rd Floor, Suite 315 Westlands Rd, Westlands
+            </a>
+          </div>
+          <div className="flex">
+            <p className="mr-1 color-text">Address:</p>
+            <a
+              href="https://www.google.com/maps/@-0.1091283,34.753468,3a,75y,261.9h,90t/data=!3m10!1e1!3m8!1stDI3KJU8_gVT9-pDNdbo9Q!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DtDI3KJU8_gVT9-pDNdbo9Q%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D281.58456%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192!9m2!1b1!2i36?entry=ttu"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Our address"
+              title="Our address"
+              className="transition-colors duration-300 color-andego hover:no-underline"
+            >
+              Adala Atuko/ Got Huma Road, Behind St.Joseph's Catholic
+              Church,Milimani, Kisumu
             </a>
           </div>
         </div>
@@ -127,23 +152,23 @@ const Footer = () => {
               href="/"
               className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
-              F.A.Q
+              Home
             </a>
           </li>
           <li>
             <a
-              href="/"
+              href="/practice_areas"
               className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
-              Privacy Policy
+              Practice Areas
             </a>
           </li>
           <li>
             <a
-              href="/"
+              href="/about"
               className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
-              Terms &amp; Conditions
+              About Us
             </a>
           </li>
         </ul>

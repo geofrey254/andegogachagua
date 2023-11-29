@@ -11,22 +11,24 @@ const Contact_page = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_7mib2j9",
-        "template_j8qx449",
-        form.current,
-        "ORZ8LcmBEEYQ_XG0c"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("message sent");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_7mib2j9",
+          "template_j8qx449",
+          form.current,
+          "ORZ8LcmBEEYQ_XG0c"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log("message sent");
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
 
   const goto = () => {

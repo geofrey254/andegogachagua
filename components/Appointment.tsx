@@ -10,21 +10,26 @@ const Appointment = () => {
     e.preventDefault();
 
     if (form.current) {
-      emailjs
-        .sendForm(
-          "service_7mib2j9",
-          "template_eovngyb",
-          form.current,
-          "ORZ8LcmBEEYQ_XG0c"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+      if (
+        typeof form.current === "string" ||
+        form.current instanceof HTMLFormElement
+      ) {
+        emailjs
+          .sendForm(
+            "service_7mib2j9",
+            "template_eovngyb",
+            form.current,
+            "ORZ8LcmBEEYQ_XG0c"
+          )
+          .then(
+            (result) => {
+              console.log(result.text);
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
+      }
     }
   };
 

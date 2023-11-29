@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import styles from "app/contact.module.css";
-import { useRef } from "react";
+import { useRef, LegacyRef } from "react";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
 
 const Contact_page = () => {
-  const form = useRef();
+  const form: LegacyRef<HTMLFormElement> = useRef(null);
 
   const sendEmail = (e) => {
     e.preventDefault();

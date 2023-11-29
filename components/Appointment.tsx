@@ -1,10 +1,10 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, LegacyRef } from "react";
 import styles from "app/appointment.module.css";
 import emailjs from "@emailjs/browser";
 
 const Appointment = () => {
-  const form = useRef();
+  const form: LegacyRef<HTMLFormElement> = useRef(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -26,6 +26,11 @@ const Appointment = () => {
           }
         );
     }
+  };
+
+  const goto = () => {
+    alert("Form submitted succesfully");
+    window.open("/", "_self");
   };
   return (
     <div>
@@ -89,6 +94,7 @@ const Appointment = () => {
                           focus:outline-none focus:shadow-outline"
                   type="submit"
                   value="send"
+                  onClick={goto}
                 >
                   Book
                 </button>

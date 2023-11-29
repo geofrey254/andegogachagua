@@ -34,8 +34,8 @@ const Appointment = () => {
   };
 
   const goto = () => {
-    alert("Form submitted succesfully");
-    window.open("/", "_self");
+    alert("We'll contact you to confirm your booking");
+    window.open("/contact", "_self");
   };
   return (
     <div>

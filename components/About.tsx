@@ -10,10 +10,10 @@ const About = () => {
     <div className="flex-1 p-20 md:grid md:grid-cols-12 ">
       <div className="image md:col-span-5 lg:col-span-5 col-span-12">
         <Image
-          className="rounded-lg border-2 border-amber-500 shadow-lg shadow-amber-500/100"
-          src="/attorney1.jpg"
-          width={400}
-          height={300}
+          className=""
+          src="/law.png"
+          width={600}
+          height={600}
           alt="Picture of the CEO"
         />
       </div>

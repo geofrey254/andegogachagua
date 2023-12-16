@@ -4,133 +4,146 @@ import styles from "app/about.module.css";
 
 const Team = () => {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
-        <p className="inline-block px-3 py-px mb-4 text-4xl font-black tracking-wide text-teal-950  uppercase">
-          Discover Our Team
-        </p>
-      </div>
-      <div className="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:max-w-screen-lg">
-        <div>
-          <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img
-              className="absolute object-cover w-full h-full rounded"
-              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-              alt="Person"
-            />
+    <div>
+      <section className="bg-white">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+          <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-black-100">
+              Our Team
+            </h2>
           </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-bold">Kevin Andego</p>
-            <p className="mb-5 text-xs text-gray-800">Managing Director</p>
+          <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-3">
+            <div className="items-center bg-cont rounded-lg shadow-lg sm:flex">
+              <a href="#"></a>
+              <div className="p-5">
+                <h3 className="text-3xl font-black tracking-tight">
+                  <a
+                    href="#"
+                    className="text-white hover:no-underline hover:text-white"
+                  >
+                    Kevin Andego
+                  </a>
+                </h3>
+                <span className="text-white">Managing Director</span>
+              </div>
+            </div>
+            <div className="items-center bg-cont rounded-lg shadow-lg sm:flex">
+              <a href="#"></a>
+              <div className="p-5">
+                <h3 className="text-3xl font-black tracking-tight">
+                  <a
+                    href="#"
+                    className="text-white hover:no-underline hover:text-white"
+                  >
+                    Patrick Kimani
+                  </a>
+                </h3>
+                <span className="text-white">Partner</span>
+              </div>
+            </div>
+            <div className="items-center bg-cont rounded-lg shadow-lg sm:flex">
+              <a href="#"></a>
+              <div className="p-5">
+                <h3 className="text-3xl font-black tracking-tight">
+                  <a
+                    href="#"
+                    className="text-white hover:no-underline hover:text-white"
+                  >
+                    Kevin Lugano
+                  </a>
+                </h3>
+                <span className="text-white">Associate</span>
+              </div>
+            </div>
+            <div className="items-center bg-cont rounded-lg shadow-lg sm:flex">
+              <a href="#"></a>
+              <div className="p-5">
+                <h3 className="text-3xl font-black tracking-tight">
+                  <a
+                    href="#"
+                    className="text-white hover:no-underline hover:text-white"
+                  >
+                    Paul Tirop
+                  </a>
+                </h3>
+                <span className="text-white">Associate</span>
+              </div>
+            </div>
+            <div className="items-center bg-cont rounded-lg shadow-lg sm:flex">
+              <a href="#"></a>
+              <div className="p-5">
+                <h3 className="text-3xl font-black tracking-tight">
+                  <a
+                    href="#"
+                    className="text-white hover:no-underline hover:text-white"
+                  >
+                    Gloria Mwanzia
+                  </a>
+                </h3>
+                <span className="text-white">Office Administrator</span>
+              </div>
+            </div>
+            <div className="items-center bg-cont rounded-lg shadow-lg sm:flex">
+              <a href="#"></a>
+              <div className="p-5">
+                <h3 className="text-3xl font-black tracking-tight">
+                  <a
+                    href="#"
+                    className="text-white hover:no-underline hover:text-white"
+                  >
+                    Michael Tendwa
+                  </a>
+                </h3>
+                <span className="text-white">Associate</span>
+              </div>
+            </div>
+            <div className="items-center bg-cont rounded-lg shadow-lg sm:flex">
+              <a href="#"></a>
+              <div className="p-5">
+                <h3 className="text-3xl font-black tracking-tight">
+                  <a
+                    href="#"
+                    className="text-white hover:no-underline hover:text-white"
+                  >
+                    Ben Opalo
+                  </a>
+                </h3>
+                <span className="text-white">
+                  Consultant Business Development & Strategy
+                </span>
+              </div>
+            </div>
+            <div className="items-center bg-cont rounded-lg shadow-lg sm:flex">
+              <a href="#"></a>
+              <div className="p-5">
+                <h3 className="text-3xl font-black tracking-tight">
+                  <a
+                    href="#"
+                    className="text-white hover:no-underline hover:text-white"
+                  >
+                    Daniel Kobimbo
+                  </a>
+                </h3>
+                <span className="text-white">Consultant</span>
+              </div>
+            </div>
+            <div className="items-center bg-cont rounded-lg shadow-lg sm:flex">
+              <a href="#"></a>
+              <div className="p-5">
+                <h3 className="text-3xl font-black tracking-tight">
+                  <a
+                    href="#"
+                    className="text-white hover:no-underline hover:text-white"
+                  >
+                    Leah Wanjohi
+                  </a>
+                </h3>
+                <span className="text-white">Intern</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div>
-          <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img
-              className="absolute object-cover w-full h-full rounded"
-              src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt="Person"
-            />
-          </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-bold">Patrick Kimani</p>
-            <p className="mb-5 text-xs text-gray-800">Partner</p>
-          </div>
-        </div>
-        <div>
-          <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img
-              className="absolute object-cover w-full h-full rounded"
-              src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt="Person"
-            />
-          </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-bold">Kevin Lugano</p>
-            <p className="mb-5 text-xs text-gray-800">Associate</p>
-          </div>
-        </div>
-        <div>
-          <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img
-              className="absolute object-cover w-full h-full rounded"
-              src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt="Person"
-            />
-          </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-bold">Paul Tirop</p>
-            <p className="mb-5 text-xs text-gray-800">Associate</p>
-          </div>
-        </div>
-        <div>
-          <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img
-              className="absolute object-cover w-full h-full rounded"
-              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-              alt="Person"
-            />
-          </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-bold">Gloria Mwanzia</p>
-            <p className="mb-5 text-xs text-gray-800">Office Administrator</p>
-          </div>
-        </div>
-        <div>
-          <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img
-              className="absolute object-cover w-full h-full rounded"
-              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-              alt="Person"
-            />
-          </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-bold">Michael Tendwa</p>
-            <p className="mb-5 text-xs text-gray-800">Associate</p>
-          </div>
-        </div>
-        <div>
-          <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img
-              className="absolute object-cover w-full h-full rounded"
-              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-              alt="Person"
-            />
-          </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-bold">Ben Opalo</p>
-            <p className="mb-5 text-xs text-gray-800">
-              Consultant Business Development & Strategy
-            </p>
-          </div>
-        </div>
-        <div>
-          <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img
-              className="absolute object-cover w-full h-full rounded"
-              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-              alt="Person"
-            />
-          </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-bold">Daniel Kobimbo</p>
-            <p className="mb-5 text-xs text-gray-800">Consultant</p>
-          </div>
-        </div>
-        <div>
-          <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img
-              className="absolute object-cover w-full h-full rounded"
-              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-              alt="Person"
-            />
-          </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-bold">Leah Wanjohi</p>
-            <p className="mb-5 text-xs text-gray-800">Intern</p>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   );
 };

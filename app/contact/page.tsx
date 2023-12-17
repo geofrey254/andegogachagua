@@ -15,6 +15,49 @@ import {
   Contact_page,
 } from "@/components";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Andego Gachagua Advocates LLP - Contact Us",
+  description:
+    "We firmly believe in doing our work well, guided by a keen sense of professional integrity, trust and commercial awareness. This means that we apply our best efforts to provide excellent advice, to protect our clients' interests and to do that in a timely manner that does not affect other facets of our clients' personal/business affairs. After all, we understand that the legal aspect is but one of several other aspects you need to consider. We do not offer excuses or justifications. We simply deliver.",
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Andego Gachagua Advocates LLP - Contact Us",
+    description:
+      "We firmly believe in doing our work well, guided by a keen sense of professional integrity, trust and commercial awareness. This means that we apply our best efforts to provide excellent advice, to protect our clients' interests and to do that in a timely manner that does not affect other facets of our clients' personal/business affairs. After all, we understand that the legal aspect is but one of several other aspects you need to consider. We do not offer excuses or justifications. We simply deliver.",
+    url: "https://www.andegogachagua.com/about",
+    siteName: "Andego Gachagua",
+    images: [
+      {
+        url: "https://www.andegogachagua.com/_next/image?url=%2Flogo.png&w=64&q=75",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://www.andegogachagua.com/_next/image?url=%2Flogo.png&w=64&q=75",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+};
+
 const page = () => {
   return (
     <div>

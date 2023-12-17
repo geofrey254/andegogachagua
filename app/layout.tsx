@@ -12,6 +12,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Andego Gachagua Advocates LLP",
   description: "Andego Gachagua Advocates LLP",
+  verification: {
+    google: "zUhK1LifkKZBI8vvFhwNbGknoIo-CUafRWL3ijty0D4",
+  },
 };
 
 export default function RootLayout({

@@ -18,17 +18,9 @@ export const metadata: Metadata = {
     google: "sIV8tM10UwKglS_MqnPslytfvxJpGr9bP21OtyRwU3I",
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
-    googleBot: {
-      index: true,
-      follow: false,
-      noimageindex: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   },
   openGraph: {
     title: "Andego Gachagua Advocates LLP",

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Poppins:wght@200;300;500;600;800;900&display=swap');
+
+.body {
+    width: 100%;
+    height: 100vh;
+    background: #cb8547;
+}
+
+.heading {
+    font-family: 'Nunito', sans-serif;
+}

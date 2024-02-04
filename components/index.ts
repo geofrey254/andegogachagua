@@ -23,5 +23,5 @@ export {
     Footer,
     Choose,
     Contact_page,
-    Features
+    Features,
 }

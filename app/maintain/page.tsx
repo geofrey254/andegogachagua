@@ -27,6 +27,7 @@ export default function RootLayout({
             This Site is Under Maintenance
           </h1>
         </div>
+        {children}
       </body>
     </html>
   );

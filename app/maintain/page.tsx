@@ -3,11 +3,7 @@ import React from "react";
 import styles from "app/main.module.css";
 import Image from "next/image";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const Maintenance = () => {
   return (
     <html lang="en">
       <body className={["", styles.body].join(" ")}>
@@ -27,8 +23,9 @@ export default function RootLayout({
             This Site is Under Maintenance
           </h1>
         </div>
-        {children}
       </body>
     </html>
   );
-}
+};
+
+export default Maintenance;

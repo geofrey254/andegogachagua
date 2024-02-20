@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   verification: {
     google: "sIV8tM10UwKglS_MqnPslytfvxJpGr9bP21OtyRwU3I",
   },
+  alternates: {
+    canonical: `https://www.andegogachagua.com/`,
+  },
   robots: {
     index: true,
     follow: true,
@@ -39,7 +42,7 @@ export const metadata: Metadata = {
         url: "https://www.andegogachagua.com/_next/image?url=%2Flogo.png&w=64&q=75",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "Andego Gachagua Logo",
       },
     ],
     locale: "en_US",
@@ -56,7 +59,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        {children}
+        <main className="relative overflow-hidden">{children}</main>
         <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
       </body>
     </html>

@@ -8,14 +8,14 @@ import { FaAward } from "react-icons/fa";
 const Cards = () => {
   return (
     <div className="md:flex items-center justify-center text-center p-0">
-      <div className={["p-12", styles.cards_hero_2].join(" ")}>
+      <div className={["p-12 bg-gray-100", styles.cards_hero_2].join(" ")}>
         <div className="card-icon flex justify-center p-8">
-          <IoNavigate size={52} color="white" />
+          <IoNavigate size={52} className="color-text" />
         </div>
         <h2 className={["font-bold text-xl mb-2 color-text"].join(" ")}>
           Navigating the Legal Landscape
         </h2>
-        <p className="text-white drop-shadow-2xl">
+        <p className="drop-shadow-2xl text-slate-800">
           We help you navigate the complexities of the legal world with clarity
           and confidence, ensuring your rights and interests are protected.
         </p>

@@ -1,110 +1,39 @@
-<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-    <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
-        <p className="inline-block px-3 py-px mb-4 text-4xl font-black tracking-wide text-teal-950  uppercase">
-            Discover Our Team
-        </p>
-    </div>
-    <div className="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:max-w-screen-lg">
-        <div>
-            <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-                <img className="absolute object-cover w-full h-full rounded"
-                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                    alt="Person" />
-            </div>
-            <div className="flex flex-col sm:text-center">
-                <p className="text-lg font-bold">Kevin Andego</p>
-                <p className="mb-5 text-xs text-gray-800">Managing Director</p>
-            </div>
+const people = [
+{
+name: 'Leslie Alexander',
+role: 'Co-Founder / CEO',
+imageUrl:
+'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+},
+// More people...
+]
+
+export default function Example() {
+return (
+<div className="bg-white py-24 sm:py-32">
+    <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+        <div className="max-w-2xl">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+                Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper
+                suspendisse.
+            </p>
         </div>
-        <div>
-            <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-                <img className="absolute object-cover w-full h-full rounded"
-                    src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                    alt="Person" />
-            </div>
-            <div className="flex flex-col sm:text-center">
-                <p className="text-lg font-bold">Patrick Kimani</p>
-                <p className="mb-5 text-xs text-gray-800">Partner</p>
-            </div>
-        </div>
-        <div>
-            <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-                <img className="absolute object-cover w-full h-full rounded"
-                    src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                    alt="Person" />
-            </div>
-            <div className="flex flex-col sm:text-center">
-                <p className="text-lg font-bold">Kevin Lugano</p>
-                <p className="mb-5 text-xs text-gray-800">Associate</p>
-            </div>
-        </div>
-        <div>
-            <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-                <img className="absolute object-cover w-full h-full rounded"
-                    src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                    alt="Person" />
-            </div>
-            <div className="flex flex-col sm:text-center">
-                <p className="text-lg font-bold">Paul Tirop</p>
-                <p className="mb-5 text-xs text-gray-800">Associate</p>
-            </div>
-        </div>
-        <div>
-            <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-                <img className="absolute object-cover w-full h-full rounded"
-                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                    alt="Person" />
-            </div>
-            <div className="flex flex-col sm:text-center">
-                <p className="text-lg font-bold">Gloria Mwanzia</p>
-                <p className="mb-5 text-xs text-gray-800">Office Administrator</p>
-            </div>
-        </div>
-        <div>
-            <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-                <img className="absolute object-cover w-full h-full rounded"
-                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                    alt="Person" />
-            </div>
-            <div className="flex flex-col sm:text-center">
-                <p className="text-lg font-bold">Michael Tendwa</p>
-                <p className="mb-5 text-xs text-gray-800">Associate</p>
-            </div>
-        </div>
-        <div>
-            <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-                <img className="absolute object-cover w-full h-full rounded"
-                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                    alt="Person" />
-            </div>
-            <div className="flex flex-col sm:text-center">
-                <p className="text-lg font-bold">Ben Opalo</p>
-                <p className="mb-5 text-xs text-gray-800">
-                    Consultant Business Development & Strategy
-                </p>
-            </div>
-        </div>
-        <div>
-            <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-                <img className="absolute object-cover w-full h-full rounded"
-                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                    alt="Person" />
-            </div>
-            <div className="flex flex-col sm:text-center">
-                <p className="text-lg font-bold">Daniel Kobimbo</p>
-                <p className="mb-5 text-xs text-gray-800">Consultant</p>
-            </div>
-        </div>
-        <div>
-            <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-                <img className="absolute object-cover w-full h-full rounded"
-                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                    alt="Person" />
-            </div>
-            <div className="flex flex-col sm:text-center">
-                <p className="text-lg font-bold">Leah Wanjohi</p>
-                <p className="mb-5 text-xs text-gray-800">Intern</p>
-            </div>
-        </div>
+        <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+            {people.map((person) => (
+            <li key={person.name}>
+                <div className="flex items-center gap-x-6">
+                    <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                    <div>
+                        <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}
+                        </h3>
+                        <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
+                    </div>
+                </div>
+            </li>
+            ))}
+        </ul>
     </div>
 </div>
+)
+}

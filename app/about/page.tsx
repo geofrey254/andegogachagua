@@ -33,6 +33,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  alternates: {
+    canonical: `https://www.andegogachagua.com/about`,
+  },
   openGraph: {
     title: "Andego Gachagua Advocates LLP - About Us",
     description:
@@ -49,7 +52,7 @@ export const metadata: Metadata = {
         url: "https://www.andegogachagua.com/_next/image?url=%2Flogo.png&w=64&q=75",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "Andego Gachagua Logo",
       },
     ],
     locale: "en_US",
@@ -74,7 +77,7 @@ const page = () => {
               <li className="inline-flex items-center">
                 <Link
                   href="/"
-                  className="inline-flex items-center text-sm font-medium hover:no-underline text-gray-400 dark:hover:color-andego"
+                  className="inline-flex items-center text-sm font-medium hover:no-underline text-gray-400 hover:text-white"
                 >
                   <svg
                     className="w-3 h-3 mr-2.5"
@@ -119,8 +122,6 @@ const page = () => {
       <About />
       {/* Why choose us */}
       <Choose />
-      {/* Our team */}
-      <Team />
       {/* Footer */}
       <Footer />
     </div>

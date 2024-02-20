@@ -2,103 +2,80 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "app/nav.module.css";
 import { FaAward, FaArrowRight, FaWhatsapp } from "react-icons/fa";
+import { NAV_LINKS } from "@/constants";
 
 const Navbar = () => {
   return (
-    <div>
-      <div className="navbar bg-base-100">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost btn-circle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h7"
-                />
-              </svg>
-            </label>
-            <ul
-              tabIndex={0}
-              className={[
-                "menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 hover:no-underline",
-                styles.navbg,
-              ].join(" ")}
+    <nav className="navbar z-30 px-8">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <li>
-                <Link
-                  href="/"
-                  className="hover:no-underline text-white font-bold hover:color-andego"
-                >
-                  Homepage
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="hover:no-underline text-white font-bold hover:color-andego"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/practice_areas"
-                  className="hover:no-underline text-white font-bold hover:color-andego"
-                >
-                  Practice Areas
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="hover:no-underline text-white font-bold hover:color-andego"
-                >
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
           </div>
-        </div>
-        <div className="navbar-center">
-          <Link
-            href="/"
-            className="btn btn-ghost normal-case text-xl hover:no-underline hover:color-andego"
+          <ul
+            tabIndex={0}
+            className="menu menu-sm bg-cont dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52"
           >
-            <Image
-              src="/logo.png"
-              width={50}
-              height={50}
-              alt="Andego Gachagua"
-              className="logo"
-            ></Image>
-            <span className="l hidden">Andego Gachagua</span>
-          </Link>
+            {NAV_LINKS.map((link) => (
+              <Link
+                className="cursor-pointer text-sm transition-all pt-2 text-white font-semibold hover:no-underline hover:text-white"
+                href={link.href}
+                key={link.key}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </ul>
         </div>
-        <div className="navbar-end">
-          <Link
-            aria-label="Chat on WhatsApp"
-            href="https://wa.me/+254759803001"
-            className="btn btn-ghost normal-case text-xl hover:no-underline hover:color-andego"
-          >
-            <Image
-              src="/whats.png"
-              width={100}
-              height={100}
-              alt="Chat on WhatsApp"
-              className="logo"
-            ></Image>
-          </Link>
-        </div>
+        <Link href="/" className="hover:no-underline">
+          <Image
+            src="/logo_2.png"
+            width={150}
+            height={150}
+            alt="Andego Gachagua"
+            className="logo object-contain hidden md:block"
+          ></Image>
+          <Image
+            src="/logo.png"
+            width={50}
+            height={50}
+            alt="Andego Gachagua"
+            className="logo object-contain md:hidden w-10"
+          ></Image>
+        </Link>{" "}
       </div>
-    </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="lg:menu-horizontal hidden h-full gap-12 lg:flex">
+          {NAV_LINKS.map((link) => (
+            <Link
+              className="cursor-pointer text-sm transition-all pt-2 color-andego font-semibold hover:no-underline hover:text-red-300"
+              href={link.href}
+              key={link.key}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </ul>
+      </div>
+      <div className="navbar-end">
+        <a className="btn lg:btn-md btn-sm bg-black lg:shadow-lg text-white font-bold rounded-full hover:no-underline hover:text-black">
+          Book Appointment
+        </a>
+      </div>
+    </nav>
   );
 };
 

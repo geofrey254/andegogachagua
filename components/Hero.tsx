@@ -20,11 +20,6 @@ const Hero = () => {
         />
       </div>
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-red-500 hover:ring-white">
-            We do not offer excuses or justifications. We simply deliver.
-          </div>
-        </div>
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Andego Gachagua Advocates LLP

@@ -52,6 +52,72 @@
 }
 
 /* END: General styles */
+/* custom configs */
+section {
+    padding: 3.9rem 0;
+}
+
+.section-padding-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-padding-100-0 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.section-padding-0-100 {
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+
+.section-padding-100-70 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+/* Custom CSS for a Bootstrap-like container */
+
+/* Container Styles */
+.custom_container {
+    width: 90%;
+    /* Adjust the width as needed */
+    max-width: 1200px;
+    /* Adjust the max-width as needed */
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Optional: Add responsive padding or other styles */
+@media (min-width: 576px) {
+    .custom_container {
+        max-width: 100%;
+    }
+}
+
+/* Optional: Customize container styles further for different breakpoints */
+@media (min-width: 768px) {
+    .custom_container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .custom_container {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .custom_container {
+        max-width: 70%;
+    }
+}
+
+/* end custom configs */
 
 /* START: Hero styles */
 .hero {
@@ -247,5 +313,9 @@
 }
 
 .bg-cont {
+    background: #cb8547;
+}
+
+.btn-andego {
     background: #cb8547;
 }

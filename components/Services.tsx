@@ -10,69 +10,72 @@ import { Features } from "@/components";
 
 const Services = () => {
   return (
-    <div
-      className={[
-        "items-center justify-center text-center p-8",
-        styles.practice_areas,
-      ].join(" ")}
-    >
-      <h3
-        className={["color-andego col-span-12 mt-8", styles.services_what].join(
-          " "
-        )}
-      >
-        What We Do
-      </h3>
-      <h2
-        className={[
-          "col-span-12 md:text-4xl text-2xl mt-2",
-          styles.services_title,
-        ].join(" ")}
-      >
-        Our Practice Areas
-      </h2>
-      <div className="grid p-4 grid-cols-1 gap-8 xl:gap-12 md:grid-cols-2 xl:grid-cols-2">
-        <div className="p-8 space-y-3 border-2 rounded-xl bg-custom">
-          <span className="inline-block color-andego">
-            <BiSolidBank size={52} />
-          </span>
-
-          <h1 className="text-sm md:text-2xl font-bold capitalize color-text">
-            CONVEYANCING, FINANCE & BANKING
-          </h1>
-
-          <p className="color-andego">
-            Our team excels in property acquisition, development, tax planning,
-            leasing, conveyancing (property transfer, leases, etc.), and banking
-            services (securities assessment, documentation, and debt recovery).
-            We ensure smooth financial transactions with expert guidance and
-            business-oriented legal advice.
-          </p>
-        </div>
-        <div className="p-8 space-y-3 border-2 rounded-xl bg-custom">
-          <span className="inline-block color-andego ">
-            <SiHandshake size={52} />
-          </span>
-
-          <h1 className="text-sm md:text-2xl font-bold capitalize color-text">
-            DISPUTE RESOLUTION
-          </h1>
-
-          <p className="color-andego">
-            AG Legal specializes in personalized legal solutions, including
-            civil and commercial litigation, debt recovery, land and environment
-            disputes, personal injury, employment disputes, and family law. We
-            guide clients through dispute resolution methods such as litigation,
-            negotiation, conciliation, mediation, and arbitration, addressing a
-            wide spectrum of legal issues.
-          </p>
-        </div>
-      </div>
-
-      <div className="about_page_button col-span-12 justify-center text-center mb-8 md:mb-0">
-        <Link href="/contact" className="hover:no-underline">
-          <button className="flex mx-auto select-none items-center gap-3 rounded-lg bg-orange-300 py-3 px-6 text-center align-middle text-s font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:no-underline">
+    <div>
+      <div className="px-4 py-16 mx-auto md:px-24 lg:px-8 lg:py-20 bg-gray-100">
+        <h2 className="mb-8 text-4xl font-bold text-center color-text">
+          Practice Areas
+        </h2>
+        <ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+          <li className="flex items-center space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              className="w-5 h-5 fill-current color-text"
+            >
+              <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+              <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+            </svg>
+            <span>CONVEYANCING, FINANCE & BANKING</span>
+          </li>
+          <li className="flex items-center space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              className="w-5 h-5 fill-current color-text"
+            >
+              <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+              <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+            </svg>
+            <span>DISPUTE RESOLUTION</span>
+          </li>
+          <li className="flex items-center space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              className="w-5 h-5 fill-current color-text"
+            >
+              <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+              <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+            </svg>
+            <span>TAX, COMMERCIAL & CORPORATE SERVICES</span>
+          </li>
+          <li className="flex items-center space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              className="w-5 h-5 fill-current color-text"
+            >
+              <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+              <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+            </svg>
+            <span>FAMILY LAW, TRUSTS & ESTATE</span>
+          </li>
+          <li className="flex items-center space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              className="w-5 h-5 fill-current color-text"
+            >
+              <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+              <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+            </svg>
+            <span>EMERGING AREAS</span>
+          </li>
+        </ul>
+        <Link href="/practice_areas" className="hover:no-underline">
+          <button className="flex mx-auto select-none items-center gap-3 rounded-lg bg-orange-300 py-3 px-6 text-center align-middle text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:no-underline">
             View More
+            <FaArrowRight size={22} />
           </button>
         </Link>
       </div>

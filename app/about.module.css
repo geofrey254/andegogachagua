@@ -26,9 +26,11 @@
 }
 
 .call {
-    background: #cb8547;
-    width: 100%;
-    height: auto;
+    background: url('/andego/group.jpg'), linear-gradient(to bottom, #c5a790, #534444);
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* why choose us section */

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "app/contact.module.css";
-import { useRef, LegacyRef } from "react";
+import { useRef, LegacyRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
 

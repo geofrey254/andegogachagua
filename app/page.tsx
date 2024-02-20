@@ -18,7 +18,6 @@ export default function Home() {
       <Cards />
       <About />
       <Services />
-      <Team />
       <Call />
       <Appointment />
       <Footer />

@@ -19,7 +19,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Andego Gachagua Advocates LLP - Our Services",
   description:
-    "We firmly believe in doing our work well, guided by a keen sense of professional integrity, trust and commercial awareness. This means that we apply our best efforts to provide excellent advice, to protect our clients' interests and to do that in a timely manner that does not affect other facets of our clients' personal/business affairs. After all, we understand that the legal aspect is but one of several other aspects you need to consider. We do not offer excuses or justifications. We simply deliver.",
+    "Explore the diverse practice areas offered by Andego Gachagua Advocates LLP, a leading law firm dedicated to providing expert legal services in Kenya. Our practice areas encompass a wide range of specialties including corporate law, commercial litigation, intellectual property, real estate, employment law, family law, and more. With a team of experienced and skilled attorneys, we are committed to delivering tailored solutions and exceptional representation to our clients. Learn more about how our firm can assist you in navigating complex legal matters and achieving your objectives effectively.",
   robots: {
     index: false,
     follow: true,
@@ -33,11 +33,14 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  alternates: {
+    canonical: `https://www.andegogachagua.com/practice_areas`,
+  },
   openGraph: {
     title: "Andego Gachagua Advocates LLP - Our Services",
     description:
-      "We firmly believe in doing our work well, guided by a keen sense of professional integrity, trust and commercial awareness. This means that we apply our best efforts to provide excellent advice, to protect our clients' interests and to do that in a timely manner that does not affect other facets of our clients' personal/business affairs. After all, we understand that the legal aspect is but one of several other aspects you need to consider. We do not offer excuses or justifications. We simply deliver.",
-    url: "https://www.andegogachagua.com/about",
+      "Explore the diverse practice areas offered by Andego Gachagua Advocates LLP, a leading law firm dedicated to providing expert legal services in Kenya. Our practice areas encompass a wide range of specialties including corporate law, commercial litigation, intellectual property, real estate, employment law, family law, and more. With a team of experienced and skilled attorneys, we are committed to delivering tailored solutions and exceptional representation to our clients. Learn more about how our firm can assist you in navigating complex legal matters and achieving your objectives effectively.",
+    url: "https://www.andegogachagua.com/practice_areas",
     siteName: "Andego Gachagua",
     images: [
       {
@@ -49,7 +52,7 @@ export const metadata: Metadata = {
         url: "https://www.andegogachagua.com/_next/image?url=%2Flogo.png&w=64&q=75",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "Andego Gachagua Logo",
       },
     ],
     locale: "en_US",
@@ -74,7 +77,7 @@ const page = () => {
               <li className="inline-flex items-center">
                 <Link
                   href="/"
-                  className="inline-flex items-center text-sm font-medium hover:no-underline kstext-gray-400 dark:hover:color-andego"
+                  className="inline-flex items-center text-sm font-medium hover:no-underline text-gray-400 hover:text-white"
                 >
                   <svg
                     className="w-3 h-3 mr-2.5"

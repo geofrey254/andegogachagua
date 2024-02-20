@@ -4,7 +4,7 @@ import styles from "app/footer.module.css";
 
 const Footer = () => {
   return (
-    <div
+    <footer
       className={[
         "p-20 mx-auto sm:max-w-xl md:max-w-full",
         styles.footer_bg,
@@ -173,7 +173,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </footer>
   );
 };
 

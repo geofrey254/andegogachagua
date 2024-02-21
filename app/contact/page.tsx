@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description:
     "Get in touch with Andego Gachagua Advocates LLP through our Contact Us page. Whether you need legal assistance, have inquiries about our services, or want to schedule a consultation, our experienced team is here to help. Reach out to us today to discuss your legal needs and let us guide you through your legal journey with professionalism and expertise.",
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {

@@ -71,9 +71,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn lg:btn-md btn-sm bg-black lg:shadow-lg text-white font-bold rounded-full hover:no-underline hover:text-black">
+        <Link
+          href="/appointment"
+          className="btn lg:btn-md btn-sm bg-black lg:shadow-lg text-white font-bold rounded-full hover:no-underline hover:text-black"
+        >
           Book Appointment
-        </a>
+        </Link>
       </div>
     </nav>
   );

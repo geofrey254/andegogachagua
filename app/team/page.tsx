@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description:
     "Discover the exceptional legal minds behind Andego Gachagua Advocates LLP. Our diverse team brings together extensive expertise in various areas of law to provide comprehensive legal solutions tailored to your needs. Get to know our accomplished attorneys who are dedicated to delivering unparalleled service and achieving the best outcomes for our clients.",
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {

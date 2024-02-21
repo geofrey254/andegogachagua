@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Explore the diverse practice areas offered by Andego Gachagua Advocates LLP, a leading law firm dedicated to providing expert legal services in Kenya. Our practice areas encompass a wide range of specialties including corporate law, commercial litigation, intellectual property, real estate, employment law, family law, and more. With a team of experienced and skilled attorneys, we are committed to delivering tailored solutions and exceptional representation to our clients. Learn more about how our firm can assist you in navigating complex legal matters and achieving your objectives effectively.",
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {

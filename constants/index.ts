@@ -57,7 +57,7 @@ export const NAV_LINKS = [
   export const PEOPLE = [
     {
       name: "Kevin Andego",
-      role: "Managing Director",
+      role: "Managing Partner",
       imageUrl:
         "/andego/kevin_andego.jpg",
         description: "Kevin, Managing Partner at the firm, is a University of Nairobi graduate with a Post Graduate Diploma from Kenya School of Law. Passionate about law, he leverages it for societal betterment. Specializing in Corporate law, he manages incorporation, insolvency, mergers, acquisitions, and commercial transactions. Additionally, he handles Conveyancing transactions in Real Estate projects, covering transfers, leases, securities registration, and joint ventures. With expertise in Civil and Criminal litigation, Family, Constitutional, and Public Interest Law, Kevin is a versatile advocate committed to legal excellence across diverse domains."
@@ -96,7 +96,7 @@ export const NAV_LINKS = [
     },
 
     {
-      name: "Lead Wanjohi",
+      name: "Leah Wanjohi",
       role: "Intern",
       imageUrl:
         "/andego/leah_wanjohi.jpg",

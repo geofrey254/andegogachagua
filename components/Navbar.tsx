@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
         <Link href="/" className="hover:no-underline">
           <Image
-            src="/logo_2.png"
+            src="/logo_3.png"
             width={150}
             height={150}
             alt="Andego Gachagua"

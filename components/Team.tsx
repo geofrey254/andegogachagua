@@ -6,50 +6,30 @@ import { PEOPLE } from "@/constants";
 const Team = () => {
   return (
     <div>
-      <div className="py-24 sm:py-32 gap-2">
-        <div className="mx-auto text-center">
-          <div className="w-full px-10 pt-10">
-            <div className="container mx-auto">
-              <div
-                role="list"
-                aria-label="Our Team"
-                className="flex items-center flex-wrap md:justify-around justify-around p-2"
-              >
-                {PEOPLE.map((person) => (
-                  <div
-                    role="listitem"
-                    className="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
-                  >
-                    <div className="rounded overflow-hidden shadow-md bg-white shadow-orange-300">
-                      <div className="absolute -mt-20 w-full flex justify-center">
-                        <div className="h-32 w-38">
-                          <img
-                            src={person.imageUrl}
-                            alt={person.name}
-                            role="img"
-                            className="rounded-full object-cover h-full w-full shadow-md"
-                          />
-                        </div>
-                      </div>
-                      <div className="px-6 mt-16">
-                        <h1 className="font-bold text-3xl text-center mb-1">
-                          {person.name}
-                        </h1>
-                        <p className="text-gray-800 text-sm text-center">
-                          {person.role}
-                        </p>
-                        <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                          {person.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {PEOPLE.map((person) => (
+            <div className="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col md:flex-row shadow-lg shadow-red-200">
+              <div className="w-full md:w-2/5 h-50">
+                <img
+                  className="object-center object-cover w-full h-full"
+                  src={person.imageUrl}
+                  alt={person.name}
+                />
+              </div>
+              <div className="w-full md:w-3/5 text-left p-6 md:p-4 space-y-2">
+                <p className="text-2xl text-white font-extrabold">
+                  {person.name}
+                </p>
+                <p className="text-base text-white font-bold">{person.role}</p>
+                <p className="text-xs leading-relaxed text-white font-normal">
+                  {person.description}
+                </p>
               </div>
             </div>
-          </div>
+          ))}
         </div>
-      </div>
+      </section>
     </div>
   );
 };

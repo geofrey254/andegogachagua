@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Andego Gachagua Advocates LLP",
   description:
-    "We firmly believe in doing our work well, guided by a keen sense of professional integrity, trust and commercial awareness. This means that we apply our best efforts to provide excellent advice, to protect our clients' interests and to do that in a timely manner that does not affect other facets of our clients' personal/business affairs. After all, we understand that the legal aspect is but one of several other aspects you need to consider. We do not offer excuses or justifications. We simply deliver.",
+    "We firmly believe in doing our work well, guided by a keen sense of professional integrity, trust and commercial awareness. This means that we apply our best efforts to provide excellent advice, to protect our clients' interests and to do that in a timely manner that does not affect other facets of our clients' personal/business affairs. After all, we understand that the legal aspect is but one of several other aspects you need to consider.",
   keywords: ["Andego Gachagua", "Law Firm Kenya", "Patrick Kimani"],
   verification: {
     google: "sIV8tM10UwKglS_MqnPslytfvxJpGr9bP21OtyRwU3I",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Andego Gachagua Advocates LLP",
     description:
-      "We firmly believe in doing our work well, guided by a keen sense of professional integrity, trust and commercial awareness. This means that we apply our best efforts to provide excellent advice, to protect our clients' interests and to do that in a timely manner that does not affect other facets of our clients' personal/business affairs. After all, we understand that the legal aspect is but one of several other aspects you need to consider. We do not offer excuses or justifications. We simply deliver.",
+      "We firmly believe in doing our work well, guided by a keen sense of professional integrity, trust and commercial awareness. This means that we apply our best efforts to provide excellent advice, to protect our clients' interests and to do that in a timely manner that does not affect other facets of our clients' personal/business affairs. After all, we understand that the legal aspect is but one of several other aspects you need to consider.",
     url: "https://www.andegogachagua.com",
     siteName: "Andego Gachagua",
     images: [

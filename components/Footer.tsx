@@ -30,12 +30,9 @@ const Footer = () => {
             </span>
           </a>
           <div className="mt-6 lg:max-w-sm">
-            <p className="text-sm">
+            <p className="text-lg">
               We firmly believe in doing our work well, guided by a keen sense
               of professional integrity, trust and commercial awareness.
-            </p>
-            <p className="mt-4 text-sm">
-              We do not offer excuses or justifications. We simply deliver.
             </p>
           </div>
         </div>

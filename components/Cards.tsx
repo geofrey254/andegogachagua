@@ -28,9 +28,9 @@ const Cards = () => {
           Excellence in Advocacy
         </h2>
         <p className="color-andego drop-shadow-2xl">
-          Experience the pinnacle of legal representation with our team of
-          skilled attorneys who deliver unwavering dedication and excellence in
-          advocacy.
+          Trust our team of skilled attorneys for top-tier legal representation,
+          marked by dedication, excellence, and meticulous attention to detail,
+          ensuring optimal outcomes for clients.
         </p>
       </div>
     </div>

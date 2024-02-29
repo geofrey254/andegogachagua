@@ -8,31 +8,17 @@ import { BiSolidBank, BiSolidBriefcaseAlt2, BiWorld } from "react-icons/bi";
 const About = () => {
   return (
     <div className="p-20 md:grid md:grid-cols-12 ">
-      <div className="image md:col-span-5 lg:col-span-5 col-span-12">
-        <Image
-          className=""
-          src="/law.png"
-          width={400}
-          height={400}
-          alt="Picture of the CEO"
-        />
-      </div>
-      <div className="about-home md:col-span-7 lg:col-span-7 col-span-12 md:ml-8">
-        <h4
-          className={[
-            "color-andego text-2xl md:text-lg md:mt-0 mt-10",
-            styles.about_h_home,
-          ].join(" ")}
-        >
-          About Us
-        </h4>
+      <div className="about-home col-span-12 text-center">
         <h2
           className={[
-            "md:mt-5 mt-2 text-4xl md:text-4xl text-gray-800",
+            "md:mt-5 mt-2 text-3xl md:text-4xl text-gray-800",
             styles.about_welcome,
           ].join(" ")}
         >
-          Welcome to Andego Gachagua Advocates LLP
+          Welcome to <br />
+          <span className="color-text font-extrabold">
+            Andego Gachagua Advocates LLP
+          </span>
         </h2>
         <p className="md:mt-12 mt-8 text-gray-500">
           At our core, we adhere steadfastly to the principles of professional

@@ -25,9 +25,9 @@ const Hero = () => {
             Andego Gachagua Advocates LLP
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-200">
-            AG Legal provides comprehensive legal solutions, prioritizing client
-            understanding, protection, and collaboration for exceptional results
-            with integrity and professionalism.
+            AG Advocates provides comprehensive legal solutions, prioritizing
+            client understanding, protection, and collaboration for exceptional
+            results with integrity and professionalism.
           </p>
           <div className="mt-10 mb-10 flex items-center justify-center gap-x-6">
             <a

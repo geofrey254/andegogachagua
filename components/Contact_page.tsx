@@ -52,7 +52,7 @@ const Contact_page = () => {
               </h1>
 
               <p className="max-w-xl mt-6">
-                Ask us everything and we would love to hear from you
+                We would love to hear from you. Ask us anything.
               </p>
 
               <div className="mt-6 space-y-8 md:mt-8">
@@ -103,8 +103,8 @@ const Contact_page = () => {
                   </svg>
 
                   <span className="mx-2 text-white w-72">
-                    Adala Atuko/ Got Huma Road, Behind St.Joseph's Catholic
-                    Church, <br /> Milimani, Kisumu
+                    Adala Otuko Road, Behind St.Joseph's Catholic Church, <br />{" "}
+                    Milimani, Kisumu
                   </span>
                 </p>
 

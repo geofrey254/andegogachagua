@@ -15,7 +15,8 @@ const About = () => {
             styles.about_welcome,
           ].join(" ")}
         >
-          Welcome to <br />
+          <span className="color-text text-2xl">Welcome to</span>
+          <br />
           <span className="color-text font-extrabold">
             Andego Gachagua Advocates LLP
           </span>

@@ -68,7 +68,7 @@ export const NAV_LINKS = [
       role: "Partner",
       imageUrl:
         "/andego/patrick_kimani.jpg",
-        description: "Patrick Kimani, a partner at the Firm, is a Strathmore Law School graduate with a Kenya School of Law Post Graduate Diploma. Additionally, he holds a diploma in International commercial arbitration and Investment arbitration from the Austrian Arbitration Academy, and a Public Policy analysis certificate from the London School of Economics and Public Policy. He advises clients in banking, microfinance, security services, retail, energy, real estate, manufacturing, and assembly. With expertise in cross-border M&A transactions across Africa, he's been involved in deals in Uganda, Rwanda, Tanzania, Burundi, Mauritius, DRC, South Sudan, Zambia, and Malawi. He also contributed to the arrest of Felicien Kabuga, a top Rwandan genocide fugitive, during his tenure at the UN-IRMCT."
+        description: "Patrick Kimani is a partner at the Firm. He is an LLB-graduate from Strathmore Law School and has a Post Graduate Diploma from the Kenya School of Law. His legal acumen is broadened by a diploma in International Commercial Arbitration and Investment Arbitration from the Austrian Arbitration Academy, and a certificate in Public Policy Analysis from the London School of Economics and Public Policy.Professionally, Patrick advises clients across various sectors, including banking, microfinance, security services, retail, energy, real estate, manufacturing, and assembly. He has a notable track record in cross-border mergers and acquisitions (M&A) transactions throughout the region. Beyond his commercial law practice, Patrick has contributed to the legal field through his involvement in international criminal justice, including participation in efforts related to the prosecution of high-profile international criminals during his time at the UN Residual Mechanism for Criminal Tribunals in Tanzania. His professional journey reflects a commitment to excellence, ethical practice, and a significant contribution to both local and international legal landscapes."
     },
 
     {
@@ -92,7 +92,7 @@ export const NAV_LINKS = [
       role: "Office Administrator",
       imageUrl:
         "/andego/gloria_mwanzia.jpg",
-        description:"Gloria Mwanzia is a dedicated criminal investigator focused on keeping general public safety through superior investigation of crime and offences, diligent about administering tests in line with outlined procedures, well versed in distributing and collecting materials, managing supplies and updating tests logs. Gloria has a bachelor's degree in criminology and security studies, diploma in criminology and security studies, certificate in criminology and security, certificate in closed circuit television from Kenya institute of security and criminal justice.Gloria works as the Office Administrator where she oversees operations across the office."
+        description:"Gloria Mwanzia excels in her primary role as an Office Administrator, where she is instrumental in overseeing operations across the office with unparalleled efficiency and attention to detail. With a robust background in criminology and security studies, including a Bachelor's degree, a Diploma, and Certificates in Criminology and Security, as well as specialized training in Closed Circuit Television from the Kenya Institute of Security and Criminal Justice, Gloria brings a unique perspective to her administrative duties.In her capacity as Office Administrator, Gloria ensures the smooth functioning of office operations, adeptly managing supplies, distributing and collecting materials, and maintaining up-to-date test logs. Her meticulous approach to administration and organization ensures that all aspects of the office run seamlessly, allowing for enhanced productivity and operational excellence. Gloria's dual expertise underscores her significant contribution to the organization, where she continues to leverage her diverse skill set to the benefit of her team and the wider community."
     },
 
     {
@@ -100,7 +100,7 @@ export const NAV_LINKS = [
       role: "Intern",
       imageUrl:
         "/andego/leah_wanjohi.jpg",
-        description:"Leah is an intern with the Firm. She is an LLB graduate from the University of Nairobi, and is  currently enrolled at the Kenya School of Law, for the Advocate Training Programme. She assists in legal drafting, writing and research on various topics. She previously interned at Anjarwalla & Khanna Advocates - ALN in the Litigation Department where she aided in research on commercial and corporate litigation matters, drafting of legal documents and was part of various legal projects. "
+        description:"Leah Wanjohi, an intern at the Firm, is in the process of refining her legal expertise. With an LLB from the University of Nairobi, she is now pursuing the Advocate Training Programme at the Kenya School of Law, where she focuses on legal drafting, research, and writing. Leah's practical experience includes a previous internship at Anjarwalla & Khanna Advocates - ALN in the Litigation Department, where she assisted in commercial and corporate litigation research, drafting legal documents, and contributed to various legal projects. Leah's role at the Firm is characterized by her continuous learning and contribution to legal tasks, showcasing her growing proficiency and potential in the legal field."
     },
 
     {
@@ -108,7 +108,7 @@ export const NAV_LINKS = [
       role: "Intern",
       imageUrl:
         "/andego/jackline_ndichu.jpg",
-        description:"Jackline is an intern with the Firm. She is a student at the University of Nairobi pursuing her law studies. Her special interests lie in energy and natural resources, M&A and corporate restructurings, private equity and arbitration."
+        description:"Jackline Ndichu is an intern at the Firm, where she actively applies her burgeoning legal knowledge while continuing her LLB studies at the University of Nairobi. As a law student, Jackline is in a unique position of continuously learning on the job, allowing her to directly integrate theoretical insights with practical experience. Her areas of special interest include energy and natural resources, mergers and acquisitions (M&A), corporate restructurings, private equity, and arbitration. This breadth of interests highlights her eagerness to explore diverse facets of law and her commitment to developing a comprehensive understanding of these critical areas. Jackline's ongoing education and hands-on experience at the Firm position her as a dynamic contributor to the team, with a keen eye on the evolving landscape of legal practice."
     },
     
   ];

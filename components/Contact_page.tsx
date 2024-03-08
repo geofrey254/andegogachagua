@@ -78,7 +78,8 @@ const Contact_page = () => {
                   </svg>
 
                   <span className="mx-2 text-white w-72">
-                    Madonna House, 3rd Floor, Suite 315 Westlands Rd, Westlands
+                    Madonna House, 3rd Floor, Suite 314 and 315 Westlands Rd,
+                    Westlands
                   </span>
                 </p>
                 <p className="flex items-start -mx-2">

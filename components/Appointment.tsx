@@ -131,7 +131,8 @@ const Appointment = () => {
                     Main Office
                   </h2>
                   <p className=" text-white">
-                    Madonna House, 3rd Floor, Suite 315 Westlands Rd, Westlands
+                    Madonna House, 3rd Floor, Suite 314 and 315 Westlands Rd,
+                    Westlands
                   </p>
                 </div>
               </div>
@@ -144,8 +145,8 @@ const Appointment = () => {
                     Kisumu Office
                   </h2>
                   <p className=" text-white">
-                    Adala Atuko/ Got Huma Road, Behind St.Joseph's Catholic
-                    Church, <br /> Milimani, Kisumu
+                    Adala Otuko Road, Behind St.Joseph's Catholic Church, <br />{" "}
+                    Milimani, Kisumu
                   </p>
                 </div>
               </div>

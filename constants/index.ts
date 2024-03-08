@@ -70,6 +70,14 @@ export const NAV_LINKS = [
         "/andego/patrick_kimani.jpg",
         description: "Patrick Kimani is a partner at the Firm. He is an LLB-graduate from Strathmore Law School and has a Post Graduate Diploma from the Kenya School of Law. His legal acumen is broadened by a diploma in International Commercial Arbitration and Investment Arbitration from the Austrian Arbitration Academy, and a certificate in Public Policy Analysis from the London School of Economics and Public Policy.Professionally, Patrick advises clients across various sectors, including banking, microfinance, security services, retail, energy, real estate, manufacturing, and assembly. He has a notable track record in cross-border mergers and acquisitions (M&A) transactions throughout the region. Beyond his commercial law practice, Patrick has contributed to the legal field through his involvement in international criminal justice, including participation in efforts related to the prosecution of high-profile international criminals during his time at the UN Residual Mechanism for Criminal Tribunals in Tanzania. His professional journey reflects a commitment to excellence, ethical practice, and a significant contribution to both local and international legal landscapes."
     },
+    
+    {
+      name: "Michael Tendwa",
+      role: "Senior Associate",
+      imageUrl:
+        "/andego/michael_tendwa.jpg",
+        description:"Michael Tendwa, an Associate specializing in civil and commercial litigation, employment, and family law, boasts extensive experience in corporate matters and dispute resolution. His expertise spans contract review, trademark registration, and regulatory compliance across various industries like FMCG, software, and energy. Previously at MW & Company Advocates LLP, he excelled in litigation, contract review, and intellectual property registration, achieving favorable results for clients through adept legal research and drafting. As an Advocate of the High Court of Kenya with an LLB from Strathmore University, Tendwa brings a robust background to his legal practice, ensuring effective representation and successful outcomes."
+    },
 
     {
       name: "Paul Tirop",
@@ -79,13 +87,7 @@ export const NAV_LINKS = [
         description:"Paul is an associate with the Firm. He holds a bachelor of laws degree from the University of Nairobi (LLB) and a post graduate Diploma from the Kenya School of Law. He has extensive litigation experience in tax, personal injury and insurance, family, conveyancing and commercial law matters to name but a few. His research and practice interests are in civil and commercial litigation, data protection, intellectual property and information technology law.Paul holds a certificate in Theology from the New Creation Bible College."
     },
 
-    {
-      name: "Michael Tendwa",
-      role: "Associate",
-      imageUrl:
-        "/andego/michael_tendwa.jpg",
-        description:"Michael Tendwa, an Associate specializing in civil and commercial litigation, employment, and family law, boasts extensive experience in corporate matters and dispute resolution. His expertise spans contract review, trademark registration, and regulatory compliance across various industries like FMCG, software, and energy. Previously at MW & Company Advocates LLP, he excelled in litigation, contract review, and intellectual property registration, achieving favorable results for clients through adept legal research and drafting. As an Advocate of the High Court of Kenya with an LLB from Strathmore University, Tendwa brings a robust background to his legal practice, ensuring effective representation and successful outcomes."
-    },
+   
 
     {
       name: "Gloria Mwanzia",

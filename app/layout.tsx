@@ -5,7 +5,7 @@ import styles from "./nav.module.css";
 import "uikit/dist/css/uikit.min.css";
 import "uikit/dist/js/uikit.min.js";
 import Head from "next/head";
-
+import { motion, AnimatePresence } from "framer-motion";
 import { Navbar } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });

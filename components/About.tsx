@@ -8,7 +8,7 @@ import { BiSolidBank, BiSolidBriefcaseAlt2, BiWorld } from "react-icons/bi";
 const About = () => {
   return (
     <div className="p-20 md:grid md:grid-cols-12 ">
-      <div className="about-home col-span-12 text-center">
+      <div className="about-home col-span-12 text-center bg-svg">
         <h2
           className={[
             "md:mt-5 mt-2 text-3xl md:text-4xl text-gray-800",

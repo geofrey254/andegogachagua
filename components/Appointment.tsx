@@ -39,7 +39,7 @@ const Appointment = () => {
   };
   return (
     <div>
-      <div className="flex justify-center items-center w-screen h-full bg-white p-4">
+      <div className="flex justify-center items-center w-screen h-full bg-svg p-4">
         <div className="container mx-auto my-20 px-4 lg:px-0">
           <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
             <form ref={form} onSubmit={sendEmail}>

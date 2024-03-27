@@ -16,6 +16,7 @@ import {
 import styles from "app/about_us.module.css";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { motion } from "framer-motion";
 
 export const metadata: Metadata = {
   title: "Andego Gachagua Advocates LLP - Our Team",
@@ -104,9 +105,9 @@ const page = () => {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="m1 9 4-4-4-4"
                     />
                   </svg>
@@ -119,6 +120,7 @@ const page = () => {
           </nav>
         </div>
       </div>
+
       <Team />
       <Footer />
     </div>

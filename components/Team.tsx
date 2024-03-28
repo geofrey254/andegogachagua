@@ -53,7 +53,7 @@ const Team = () => {
                     alt={person.name}
                     width={500}
                     height={300}
-                    loading="lazy"
+                    loading="eager"
                   />
                   <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
                     <Link

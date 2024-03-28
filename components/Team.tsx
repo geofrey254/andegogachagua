@@ -47,10 +47,13 @@ const Team = () => {
             <div className="grid gap-2 lg:gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               {PEOPLE.map((person) => (
                 <div className="text-center text-gray-500 ">
-                  <img
+                  <Image
                     className="mx-auto mb-4 w-36 h-34 rounded-full shadow-lg shadow-orange-400"
                     src={person.imageUrl}
                     alt={person.name}
+                    width={500}
+                    height={300}
+                    loading="lazy"
                   />
                   <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
                     <Link

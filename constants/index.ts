@@ -58,6 +58,7 @@ export const NAV_LINKS = [
     {
       id: 1,
       name: "Kevin Andego",
+      slug: "kevin-andego",
       role: "Senior Partner",
       imageUrl:
         "/andego/kevin_andego.jpg",
@@ -67,6 +68,7 @@ export const NAV_LINKS = [
     {
       id:2,
       name: "Patrick Kimani",
+      slug: "patrick-kimani",
       role: "Managing Partner",
       imageUrl:
         "/andego/patrick_kimani.jpg",
@@ -76,6 +78,7 @@ export const NAV_LINKS = [
     {
       id:3,
       name: "Michael Tendwa",
+      slug: "michael-tendwa",
       role: "Principal Associate",
       imageUrl:
         "/andego/michael_tendwa.jpg",
@@ -86,6 +89,7 @@ export const NAV_LINKS = [
     {
       id:4,
       name: "Paul Tirop",
+      slug: "paul-tirop",
       role: "Lawyer",
       imageUrl:
         "/andego/paul_tirop.jpg",
@@ -95,6 +99,7 @@ export const NAV_LINKS = [
     {
       id:5,
       name: "Claire Anyago",
+      slug: "claire-anyago",
       role: "Lawyer",
       imageUrl:
         "/andego/claire_anyago.jpg",
@@ -106,6 +111,7 @@ export const NAV_LINKS = [
     {
       id:5,
       name: "Gloria Mwanzia",
+      slug: "gloria-mwanzia",
       role: "Office Administrator",
       imageUrl:
         "/andego/gloria_mwanzia.jpg",
@@ -115,6 +121,7 @@ export const NAV_LINKS = [
     {
       id:6,
       name: "Leah Wanjohi",
+      slug: "leah-wanjohi",
       role: "Lawyer",
       imageUrl:
         "/andego/leah_wanjohi.jpg",
@@ -124,6 +131,7 @@ export const NAV_LINKS = [
     {
       id:7,
       name: "Jackline Ndichu",
+      slug: "jackline-ndichu",
       role: "Intern",
       imageUrl:
         "/andego/jackline_ndichu.jpg",
@@ -132,7 +140,7 @@ export const NAV_LINKS = [
     
   ];
 
-  export const getTeam = async (id) => {
-    const team = PEOPLE.find((team) => team.id === parseInt(id));
+  export const getTeam = async (slug) => {
+    const team = PEOPLE.find((team) => team.slug === String(slug));
     return team
   }

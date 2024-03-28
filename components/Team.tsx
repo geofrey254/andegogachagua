@@ -55,7 +55,7 @@ const Team = () => {
                   <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
                     <Link
                       className="color-text teamName hover:no-underline hover:text-black"
-                      href={`/team/${person.id}`}
+                      href={`/team/${person.slug}`}
                     >
                       {person.name}
                     </Link>

@@ -51,9 +51,9 @@ const Team = () => {
                     className="mx-auto mb-4 w-36 h-34 rounded-full shadow-lg shadow-orange-400"
                     src={person.imageUrl}
                     alt={person.name}
-                    width={500}
-                    height={300}
-                    loading="eager"
+                    width={150}
+                    height={50}
+                    loading="lazy"
                   />
                   <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
                     <Link

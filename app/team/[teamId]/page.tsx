@@ -4,7 +4,6 @@ import { getTeam } from "@/constants";
 import styles from "app/about_us.module.css";
 import { motion } from "framer-motion";
 import { Footer } from "@/components";
-import Image from "next/image";
 
 const page = async ({ params }) => {
   const { teamId } = params;
@@ -21,12 +20,10 @@ const page = async ({ params }) => {
       >
         <div className="grid gap-2 lg:gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 bg-special section-padding-100-70">
           <div className="mx-auto">
-            <Image
+            <img
               className="w-40 md:w-80 rounded-full shadow-lg shadow-orange-400"
               src={post && post.imageUrl}
               alt={post && post.name}
-              width={500}
-              height={300}
             />
           </div>
           <div className="p-2 md:p-4 mt-8 md:mt-0 md:text-start text-center">

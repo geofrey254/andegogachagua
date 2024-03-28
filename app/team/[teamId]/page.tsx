@@ -26,11 +26,11 @@ const page = async ({ params }) => {
               alt={post && post.name}
             />
           </div>
-          <div className="p-2 md:p-4 mt-8 md:mt-0">
+          <div className="p-2 md:p-4 mt-8 md:mt-0 md:text-start text-center">
             <h1 className="font-bold prof-name color-text lg:text-6xl shadow-md shadow-slate-100">
               {post && post.name}
             </h1>
-            <h2 className="font-medium prof-title text-white">
+            <h2 className="font-medium prof-title text-white md:text-4xl md:mt-8">
               {post && post.role}
             </h2>
             <p className="mt-8 text-slate-300 text-sm md:text-lg">

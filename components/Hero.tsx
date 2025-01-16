@@ -1,51 +1,50 @@
 import React from "react";
-import styles from "app/nav.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div
-      className={["relative isolate px-6 pt-14 md:px-8", styles.hero].join(" ")}
-    >
-      <div
-        className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-        aria-hidden="true"
-      >
-        <div
-          className="relative left-[calc(50%-11rem)] aspect-[1155/698] w-[36.125rem] -translate-x-1/2 rotate-[90deg] bg-gradient-to-tr from-[#f52121] to-[#5cc1ec] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-          style={{
-            clipPath:
-              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-          }}
-        />
-      </div>
-      <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Andego Gachagua Advocates LLP
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-200">
-            AG Advocates provides comprehensive legal solutions, prioritizing
-            client understanding, protection, and collaboration for exceptional
-            results with integrity and professionalism.
-          </p>
-          <div className="mt-10 mb-10 flex items-center justify-center gap-x-6">
-            <a
-              href="/contact"
-              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold color-andego hover:text-white shadow-sm hover:bg-orange-300 hover:no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
-            >
-              Contact Us
-            </a>
-            <a
-              href="/about"
-              className="text-sm font-semibold leading-6 text-white hover:no-underline hover:color-andego"
-            >
-              Learn more <span aria-hidden="true">→</span>
-            </a>
+    <section className="hero w-full max-w-full flex justify-center items-center">
+      <Image
+        src="/nairobi1.jpg"
+        alt="Law firm office"
+        fill={true}
+        style={{ objectFit: "cover" }}
+        priority
+        className="z-0"
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/60 md:bg-black/50 z-10"></div>
+      <div className="container z-20">
+        <div className="mx-auto px-8 py-12 md:px-24 md:py-24 mt-12 md:mt-0 max-w-2xl">
+          <div className="text-center px-2 md:px-0">
+            <h1 className="font-bold tracking-tight text-white text-4xl md:text-6xl">
+              Andego Gachagua Advocates LLP
+            </h1>
+            <p className="mt-6 text-base md:text-lg leading-8 text-gray-200">
+              AG Advocates provides comprehensive legal solutions, prioritizing
+              client understanding, protection, and collaboration for
+              exceptional results with integrity and professionalism.
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <Link
+                href="/contact"
+                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold color-andego hover:text-white shadow-sm hover:bg-orange-300 hover:no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+              >
+                Contact Us
+              </Link>
+              <Link
+                href="/about"
+                className="text-sm font-semibold leading-6 text-white hover:no-underline hover:color-andego"
+              >
+                Learn more <span aria-hidden="true">→</span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

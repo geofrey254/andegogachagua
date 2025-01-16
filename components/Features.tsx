@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "app/services.module.css";
 
 import { BiSolidBank, BiSolidBriefcaseAlt2, BiWorld } from "react-icons/bi";
 import { SiHandshake } from "react-icons/si";

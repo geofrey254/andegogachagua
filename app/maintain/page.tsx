@@ -1,13 +1,12 @@
 import Head from "next/head";
 import React from "react";
-import styles from "app/main.module.css";
 import Image from "next/image";
 
 const Maintenance = () => {
   return (
     <html lang="en">
-      <body className={["", styles.body].join(" ")}>
-        <div className={["text-center p-32"].join(" ")}>
+      <body className="body">
+        <div className="text-center p-32">
           <div className="flex justify-center">
             <Image
               src="/logo.png"
@@ -17,9 +16,7 @@ const Maintenance = () => {
               className=""
             ></Image>
           </div>
-          <h1
-            className={["text-white font-extrabold", styles.heading].join(" ")}
-          >
+          <h1 className="text-white font-extrabold heading">
             This Site is Under Maintenance
           </h1>
         </div>

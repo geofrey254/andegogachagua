@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "app/about.module.css";
 import { BiSolidBank, BiSolidBriefcaseAlt2, BiWorld } from "react-icons/bi";
 import { GoLaw } from "react-icons/go";
 import { SiHandshake } from "react-icons/si";
@@ -8,7 +7,7 @@ import { FaAward } from "react-icons/fa6";
 
 const Choose = () => {
   return (
-    <div className={["", styles.choose_us].join(" ")}>
+    <div className="choose_us">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">

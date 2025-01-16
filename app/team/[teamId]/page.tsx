@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { getTeam } from "@/constants";
-import styles from "app/about_us.module.css";
 import { motion } from "framer-motion";
 import { Footer } from "@/components";
 
@@ -11,7 +10,7 @@ const page = async ({ params }) => {
   const post = await getTeam(teamId);
 
   return (
-    <div>
+    <div className="mt-24">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -27,19 +26,18 @@ const page = async ({ params }) => {
             />
           </div>
           <div className="p-2 md:p-4 mt-8 md:mt-0 md:text-start text-center">
-            <h1 className="font-bold prof-name color-text lg:text-6xl shadow-md shadow-slate-100">
+            <h1 className="font-bold prof-name color-text text-3xl md:text-6xl">
               {post && post.name}
             </h1>
-            <h2 className="font-medium prof-title text-white md:text-4xl md:mt-8">
+            <h2 className="font-medium prof-title text-white text-xl md:text-4xl mt-8 md:mt-8">
               {post && post.role}
             </h2>
-            <p className="mt-8 text-slate-300 text-sm md:text-lg">
+            <p className="mt-8 text-slate-300 text-base md:text-base md:tracking-wider">
               {post && post.description}
             </p>
           </div>
         </div>
       </motion.div>
-      <Footer />
     </div>
   );
 };

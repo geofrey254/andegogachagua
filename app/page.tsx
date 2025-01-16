@@ -13,14 +13,13 @@ import {
 
 export default function Home() {
   return (
-    <main className="overflow-hidden">
+    <main className="w-full">
       <Hero />
       <Cards />
       <About />
       <Services />
       <Call />
       <Appointment />
-      <Footer />
     </main>
   );
 }

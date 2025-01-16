@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Girassol&family=Poppins:wght@200;300;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;800&display=swap');
 
 
 
@@ -122,193 +123,6 @@ section {
 
 /* end custom configs */
 
-/* START: Hero styles */
-.hero {
-    @apply flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto;
-}
-
-.hero__title {
-    @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold;
-}
-
-.hero__subtitle {
-    @apply text-[27px] text-black-100 font-light mt-5;
-}
-
-.hero__image-container {
-    @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen;
-}
-
-.hero__image {
-    @apply relative xl:w-full w-[90%] xl:h-full h-[590px] z-0;
-}
-
-.hero__image-overlay {
-    @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
-}
-
-/* END: Hero styles */
-
-/* START: Home styles */
-
-.home__text-container {
-    @apply flex flex-col items-start justify-start gap-y-2.5 text-black-100;
-}
-
-.home__filters {
-    @apply mt-12 w-full flex-between items-center flex-wrap gap-5;
-}
-
-.home__filter-container {
-    @apply flex justify-start flex-wrap items-center gap-2;
-}
-
-.home__cars-wrapper {
-    @apply grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14;
-}
-
-.home__error-container {
-    @apply mt-16 flex justify-center items-center flex-col gap-2;
-}
-
-/* END: Home styles */
-
-/* START: Car Card styles */
-.car-card {
-    @apply flex flex-col p-6 justify-center items-start text-black-100 bg-primary-blue-100 hover:bg-white hover:shadow-md rounded-3xl;
-}
-
-.car-card__content {
-    @apply w-full flex justify-between items-start gap-2;
-}
-
-.car-card__content-title {
-    @apply text-[22px] leading-[26px] font-bold capitalize;
-}
-
-.car-card__price {
-    @apply flex mt-6 text-[32px] leading-[38px] font-extrabold;
-}
-
-.car-card__price-dollar {
-    @apply self-start text-[14px] leading-[17px] font-semibold;
-}
-
-.car-card__price-day {
-    @apply self-end text-[14px] leading-[17px] font-medium;
-}
-
-.car-card__image {
-    @apply relative w-full h-40 my-3 object-contain;
-}
-
-.car-card__icon-container {
-    @apply flex group-hover:invisible w-full justify-between text-grey;
-}
-
-.car-card__icon {
-    @apply flex flex-col justify-center items-center gap-2;
-}
-
-.car-card__icon-text {
-    @apply text-[14px] leading-[17px];
-}
-
-.car-card__btn-container {
-    @apply hidden group-hover:flex absolute bottom-0 w-full z-10;
-}
-
-/* END: Car Card styles */
-
-/* START: Car Details styles */
-.car-details__dialog-panel {
-    @apply relative w-full max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5;
-}
-
-.car-details__close-btn {
-    @apply absolute top-2 right-2 z-10 w-fit p-2 bg-primary-blue-100 rounded-full;
-}
-
-.car-details__main-image {
-    @apply relative w-full h-40 bg-pattern bg-cover bg-center rounded-lg;
-}
-
-/* END: Car Details styles */
-
-/* START: Custom Filter styles */
-.custom-filter__btn {
-    @apply relative w-full min-w-[127px] flex justify-between items-center cursor-default rounded-lg bg-white py-2 px-3 text-left shadow-md sm:text-sm border;
-}
-
-.custom-filter__options {
-    @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
-}
-
-/* END: Custom Filter styles */
-
-/* START: Footer styles */
-.footer {
-    @apply flex flex-col text-black-100 mt-5 border-t border-gray-100;
-}
-
-.footer__links-container {
-    @apply flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10;
-}
-
-.footer__rights {
-    @apply flex flex-col justify-start items-start gap-6;
-}
-
-.footer__links {
-    @apply flex-1 w-full flex md:justify-end flex-wrap max-md:mt-10 gap-20;
-}
-
-.footer__link {
-    @apply flex flex-col gap-6 text-base min-w-[170px];
-}
-
-.footer__copyrights {
-    @apply flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10;
-}
-
-.footer__copyrights-link {
-    @apply flex-1 flex sm:justify-end justify-center max-sm:mt-4 gap-10;
-}
-
-/* END: Footer styles */
-
-/* START: searchbar styles */
-.searchbar {
-    @apply flex items-center justify-start max-sm:flex-col w-full relative max-sm:gap-4 max-w-3xl;
-}
-
-.searchbar__item {
-    @apply flex-1 max-sm:w-full flex justify-start items-center relative;
-}
-
-.searchbar__input {
-    @apply w-full h-[48px] pl-12 p-4 bg-light-white rounded-r-full max-sm:rounded-full outline-none cursor-pointer text-sm;
-}
-
-/* END: searchbar styles */
-
-/* START: search manufacturer styles */
-.search-manufacturer {
-    @apply flex-1 max-sm:w-full flex justify-start items-center;
-}
-
-.search-manufacturer__input {
-    @apply w-full h-[48px] pl-12 p-4 rounded-l-full max-sm:rounded-full bg-light-white outline-none cursor-pointer text-sm;
-}
-
-.search-manufacturer__options {
-    @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
-}
-
-.search-manufacturer__option {
-    @apply cursor-default select-none py-2 pl-10 pr-4;
-}
-
 /* END: search manufacturer styles */
 /* Navbar */
 .bg-custom {
@@ -321,6 +135,45 @@ section {
 
 .btn-andego {
     background: #cb8547;
+}
+
+.andego_span {
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase;
+}
+
+.navbg {
+    background: #c5c490;
+}
+
+.andego a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.andego a:hover {
+    text-decoration: none;
+}
+
+.contact {
+    background: url(/hero.jpg), linear-gradient(to right, #393929, #cb8547) center no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.contact_info {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+.contact_info .contact_number {
+    color: coral;
+    font-weight: 800;
 }
 
 /* our team names */
@@ -349,4 +202,206 @@ section {
 
 .bg-svg {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1116%26quot%3b)' fill='none'%3e%3cuse xlink:href='%23SvgjsSymbol1123' x='0' y='0'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsSymbol1123' x='720' y='0'%3e%3c/use%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1116'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpath d='M-1 0 a1 1 0 1 0 2 0 a1 1 0 1 0 -2 0z' id='SvgjsPath1118'%3e%3c/path%3e%3cpath d='M-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0z' id='SvgjsPath1117'%3e%3c/path%3e%3cpath d='M-5 0 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0z' id='SvgjsPath1120'%3e%3c/path%3e%3cpath d='M2 -2 L-2 2z' id='SvgjsPath1121'%3e%3c/path%3e%3cpath d='M6 -6 L-6 6z' id='SvgjsPath1119'%3e%3c/path%3e%3cpath d='M30 -30 L-30 30z' id='SvgjsPath1122'%3e%3c/path%3e%3c/defs%3e%3csymbol id='SvgjsSymbol1123'%3e%3cuse xlink:href='%23SvgjsPath1117' x='30' y='30' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1118' x='30' y='90' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='30' y='150' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='30' y='210' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='30' y='270' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1118' x='30' y='330' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='30' y='390' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='30' y='450' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='30' y='510' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1118' x='30' y='570' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='90' y='30' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1117' x='90' y='90' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1117' x='90' y='150' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='90' y='210' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1118' x='90' y='270' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='90' y='330' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='90' y='390' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='90' y='450' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='90' y='510' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='90' y='570' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1118' x='150' y='30' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='150' y='90' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='150' y='150' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='150' y='210' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='150' y='270' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1117' x='150' y='330' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='150' y='390' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='150' y='450' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='150' y='510' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='150' y='570' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='210' y='30' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='210' y='90' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='210' y='150' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1118' x='210' y='210' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='210' y='270' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1122' x='210' y='330' stroke='rgba(255%2c 218%2c 187%2c 0.48)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='210' y='390' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='210' y='450' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='210' y='510' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1118' x='210' y='570' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1117' x='270' y='30' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='270' y='90' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='270' y='150' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='270' y='210' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='270' y='270' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='270' y='330' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='270' y='390' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='270' y='450' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1117' x='270' y='510' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='270' y='570' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='330' y='30' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='330' y='90' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='330' y='150' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1117' x='330' y='210' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='330' y='270' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='330' y='330' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1117' x='330' y='390' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='330' y='450' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1117' x='330' y='510' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='330' y='570' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='390' y='30' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='390' y='90' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='390' y='150' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1118' x='390' y='210' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='390' y='270' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1122' x='390' y='330' stroke='rgba(255%2c 218%2c 187%2c 0.48)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='390' y='390' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1117' x='390' y='450' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='390' y='510' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1117' x='390' y='570' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1118' x='450' y='30' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='450' y='90' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='450' y='150' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='450' y='210' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1122' x='450' y='270' stroke='rgba(255%2c 218%2c 187%2c 0.48)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='450' y='330' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='450' y='390' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='450' y='450' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='450' y='510' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='450' y='570' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='510' y='30' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='510' y='90' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='510' y='150' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='510' y='210' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='510' y='270' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='510' y='330' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='510' y='390' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='510' y='450' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='510' y='510' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='510' y='570' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1117' x='570' y='30' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='570' y='90' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='570' y='150' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='570' y='210' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='570' y='270' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='570' y='330' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='570' y='390' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='570' y='450' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='570' y='510' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='570' y='570' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1117' x='630' y='30' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1118' x='630' y='90' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1118' x='630' y='150' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='630' y='210' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='630' y='270' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='630' y='330' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='630' y='390' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='630' y='450' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1122' x='630' y='510' stroke='rgba(255%2c 218%2c 187%2c 0.48)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='630' y='570' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='690' y='30' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='690' y='90' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1117' x='690' y='150' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1122' x='690' y='210' stroke='rgba(255%2c 218%2c 187%2c 0.48)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1120' x='690' y='270' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='690' y='330' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='690' y='390' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1121' x='690' y='450' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1117' x='690' y='510' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1119' x='690' y='570' stroke='rgba(255%2c 218%2c 187%2c 0.48)'%3e%3c/use%3e%3c/symbol%3e%3c/svg%3e");
+}
+
+/* Hero styling */
+.hero {
+    background: url(/nairobi1.jpg), linear-gradient(to right, #393929, #00000022) center no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        background: url(/nairobi1.jpg), linear-gradient(to right, #393929, #00000096) center no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        position: relative;
+        background-attachment: fixed;
+    }
+}
+
+/* Maintenance */
+.body {
+    width: 100%;
+    height: 100vh;
+    background: #cb8547;
+}
+
+.heading {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* cards */
+.cards_hero {
+    background: #cb8547;
+
+}
+
+
+.cards_h2 {
+    color: white;
+    font-weight: 900;
+}
+
+
+/* ABOUT  */
+.about_h_home {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.about_welcome {
+    font-family: 'Montserrat';
+    line-height: 2em;
+}
+
+.about_p {
+    font-family: 'Girassol family';
+}
+
+.about_signature {
+    font-size: 2em;
+    font-family: 'Great Vibes', sans-serif;
+}
+
+.call {
+    background: url('/andego/group.jpg'), linear-gradient(to bottom, #c5a790, #534444);
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* why choose us section */
+.choose_us {
+    background: #cb8547;
+    width: 100%;
+    height: auto;
+}
+
+/* appointment section */
+.appoint_box {
+    background: #cb8547;
+    height: auto;
+}
+
+.book_title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+/* about */
+.about {
+    background: url('/andego/group.jpg'), linear-gradient(to right, #c5c490, #020101, #cb8547);
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about_title {
+    font-family: 'Girassol', sans-serif;
+}
+
+/* other */
+.practice_areas {
+    background: #cb8547;
+    height: auto;
+    width: auto;
+}
+
+.features {
+    background: #cb8547;
+    height: auto;
+    width: auto;
+}
+
+.cards_services {
+    background: #c5c490;
+    height: auto;
+    width: auto;
+    box-shadow: rgb(30, 59, 90) 0px 20px 30px -10px;
+}
+
+.services_title {
+    color: white;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.services_what {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.services_what::before {
+    content: '__';
+    font-weight: bold;
+    margin-right: 1em;
+
+}
+
+.services_what::after {
+    content: '__';
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+.practice_h2 {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+
+}
+
+.about_button {
+    font-family: 'Nunito', sans-serif;
+    align-items: center;
+    background-image: linear-gradient(144deg, #ffffff, #ffffff 50%, #c5c490);
+    border: 0;
+    border-radius: 18px;
+    box-shadow: rgba(4, 213, 255, 0.461) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    line-height: 1em;
+    max-width: 20%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.about_button:active,
+.about_button:hover {
+    outline: 0;
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 640px) {
+    .about_button {
+        font-size: 14px;
+        min-width: 180px;
+    }
 }

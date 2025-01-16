@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "app/about.module.css";
 import { PEOPLE } from "@/constants";
 import { motion } from "framer-motion";
 

@@ -1,85 +1,175 @@
+"use client";
+import React, { useState } from "react";
+import { MdOutlineMenuBook, MdOutlineSupportAgent } from "react-icons/md";
+import { BsFillMenuButtonWideFill } from "react-icons/bs";
+import { FaCertificate, FaMoneyCheck, FaSchool } from "react-icons/fa6";
+import { TbBooks, TbListTree } from "react-icons/tb";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "app/nav.module.css";
-import { FaAward, FaArrowRight, FaWhatsapp } from "react-icons/fa";
-import { NAV_LINKS } from "@/constants";
+import { LiaSchoolSolid } from "react-icons/lia";
+import { GiTalk } from "react-icons/gi";
+import { useRouter } from "next/navigation";
 
-const Navbar = () => {
+import { PiStudentFill } from "react-icons/pi";
+import { MdPayment } from "react-icons/md";
+import { IoClose } from "react-icons/io5";
+
+// imports
+
+function Navbar() {
+  const router = useRouter();
+  const [menuOpen, setMenuOpen] = useState(true);
+
+  const handleNav = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <nav className="navbar z-30 px-8">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm bg-cont dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52"
-          >
-            {NAV_LINKS.map((link) => (
-              <Link
-                className="cursor-pointer text-sm transition-all pt-2 text-white font-semibold hover:no-underline hover:text-white"
-                href={link.href}
-                key={link.key}
-              >
-                {link.label}
-              </Link>
-            ))}
+    <nav className="fixed top-0 bg-white z-50 h-[2vh] md:h-[18vh] xl:h-[2vh] w-full flex justify-center items-center py-12 px-4 md:px-12">
+      <div className="container flex justify-between items-center">
+        {/* Branding Section */}
+        <div>
+          <Link href="/">
+            <Image
+              src="/logo_3.png"
+              width={150}
+              height={150}
+              alt="Andego Gachagua Logo"
+              className="w-2/4 md:w-full xl:w-2/4"
+            />
+          </Link>
+        </div>
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex">
+          <ul className="flex gap-8 2xl:gap-12 items-center text-black font-bold text-sm">
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/about">About</Link>
+            </li>
+            <li>
+              <Link href="/team">Our Team</Link>
+            </li>
+            <li>
+              <Link href="/practice_areas">Practice Areas</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact Us</Link>
+            </li>
           </ul>
         </div>
-        <Link href="/" className="hover:no-underline">
-          <Image
-            src="/logo_3.png"
-            width={150}
-            height={150}
-            alt="Andego Gachagua"
-            className="logo object-contain hidden md:block"
-          ></Image>
-          <Image
-            src="/logo.png"
-            width={50}
-            height={50}
-            alt="Andego Gachagua"
-            className="logo object-contain md:hidden w-10"
-          ></Image>
-        </Link>{" "}
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="lg:menu-horizontal hidden h-full gap-12 lg:flex">
-          {NAV_LINKS.map((link) => (
-            <Link
-              className="cursor-pointer text-sm transition-all pt-2 color-andego font-semibold hover:no-underline hover:text-red-300"
-              href={link.href}
-              key={link.key}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </ul>
-      </div>
-      <div className="navbar-end">
-        <Link
-          href="/appointment"
-          className="btn lg:btn-md btn-sm bg-black lg:shadow-lg text-white font-bold rounded-full hover:no-underline hover:text-black"
+
+        {/* Mobile Menu */}
+        <div
+          className={
+            menuOpen
+              ? "collapse fixed w-0 h-[100%] left-4 top-[2000px] transition-all duration-700 ease-in-out md:hidden"
+              : "fixed bg-white w-[100%] left-0 top-20 h-[90%] z-10 transition-all duration-700 ease-linear shadow-xl shadow-[#8a6445] md:hidden py-4"
+          }
         >
-          Book Appointment
-        </Link>
+          <div className="flex flex-col gap-6">
+            <ul className="flex mt-6 px-4 justify-between">
+              <li>
+                <Link
+                  href="/appointment"
+                  onClick={handleNav}
+                  className="bg-black text-white border-2 border-[#f8d6b6] px-8 py-2 rounded-2xl"
+                >
+                  Book Appointment
+                </Link>
+              </li>
+            </ul>
+            <hr />
+          </div>
+
+          {/* Mobile Navigation Links */}
+          <ul className="flex flex-col text-lg gap-y-14 mt-8 p-4 text-black font-semibold">
+            <li>
+              <Link
+                href="/"
+                className="bg-black hover:bg-gray-500 rounded block text-white py-2 px-3"
+                onClick={handleNav}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/about"
+                className="hover:bg-gray-500 rounded block hover:text-white py-2 px-3"
+                onClick={handleNav}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/team"
+                className="hover:bg-gray-500 rounded block hover:text-white py-2 px-3"
+                onClick={handleNav}
+              >
+                Our Team
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/practice_areas"
+                className="hover:bg-gray-500 rounded block hover:text-white py-2 px-3"
+                onClick={handleNav}
+              >
+                Practice Areas
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="hover:bg-gray-500 rounded block hover:text-white py-2 px-3"
+                onClick={handleNav}
+              >
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Right side of the Navbar */}
+        <div className="flex">
+          <div className="hidden md:flex gap-6 justify-center items-center font-semibold text-sm">
+            <>
+              <Link
+                href="/appointment"
+                className="bg-[#000000] hover:bg-[#facba0] rounded-2xl px-4 py-2 text-white"
+              >
+                Book Appointment
+              </Link>
+            </>
+          </div>
+
+          {/* Mobile Hamburger Menu Toggle */}
+          <div className="mobile-menu md:hidden" onClick={handleNav}>
+            <BsFillMenuButtonWideFill
+              size={30}
+              className={
+                menuOpen
+                  ? "text-[#6d4019] cursor-pointer transition-all duration-700 ease-in-out"
+                  : "hidden transition-all duration-700 ease-in-out"
+              }
+            />
+            <IoClose
+              size={30}
+              className={
+                !menuOpen
+                  ? "text-[#6d4019] cursor-pointer transition-all duration-700 ease-in-out"
+                  : "hidden transition-all duration-700 ease-in-out"
+              }
+            />
+          </div>
+        </div>
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;

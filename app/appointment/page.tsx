@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "app/about_us.module.css";
 import Link from "next/link";
 import {
   Hero,

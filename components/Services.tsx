@@ -1,4 +1,3 @@
-import styles from "app/services.module.css";
 import { BiSolidBank, BiSolidBriefcaseAlt2, BiWorld } from "react-icons/bi";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { SiHandshake } from "react-icons/si";
@@ -15,7 +14,7 @@ const Services = () => {
         <h2 className="mb-8 text-4xl font-bold text-center color-text">
           Practice Areas
         </h2>
-        <ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-3 text-base ">
           <li className="flex items-center space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"

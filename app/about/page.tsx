@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "app/about_us.module.css";
 import Link from "next/link";
 import {
   Hero,
@@ -62,14 +61,10 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div>
-      <div
-        className={["justify-center text-center p-12", styles.about].join(" ")}
-      >
+    <section className="p-0 w-full mt-24">
+      <div className="justify-center text-center p-12 about md:mt-12 xl:mt-8">
         <div>
-          <h2 className={["text-white", styles.about_title].join(" ")}>
-            About Us
-          </h2>
+          <h2 className="text-white about_title">About Us</h2>
         </div>
         <div className="flex justify-center text-center">
           <nav className="flex" aria-label="Breadcrumb">
@@ -123,8 +118,7 @@ const page = () => {
       {/* Why choose us */}
       <Choose />
       {/* Footer */}
-      <Footer />
-    </div>
+    </section>
   );
 };
 

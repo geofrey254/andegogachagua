@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import styles from "./nav.module.css";
-import "uikit/dist/css/uikit.min.css";
-import "uikit/dist/js/uikit.min.js";
 import Head from "next/head";
 import { motion, AnimatePresence } from "framer-motion";
-import { Navbar } from "@/components";
+import { Navbar, Footer } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -59,8 +56,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <main className="relative overflow-hidden">{children}</main>
+        {children}
         <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+        <Footer />
       </body>
     </html>
   );
